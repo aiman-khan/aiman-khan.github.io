@@ -34,7 +34,7 @@ I do need **support** from amazing people like you as I started posting on **[My
 
 <a href="https://linkedin.com/in/rammcodes">
 <div align="center">
-  <img src="https://i.postimg.cc/3RhcKdTD/www-linkedin-com-in-rammcodes-4.png" alt="Ram Maheshwari Linkedin Profile" width="100%" />
+  <img src="https://i.postimg.cc/3RhcKdTD/www-linkedin-com-in-rammcodes-4.png" alt="Aiman Sartaj Linkedin Profile" width="100%" />
   <br>
 </div>
 </a>
@@ -167,12 +167,12 @@ Go to `/index.html` and fill your information, there are 6 sections:
     <div class="header__logo-container">
       <div class="header__logo-img-cont">
         <img
-          src="./assets/png/john-doe.png"
-          alt="Ram Maheshwari Logo Image"
+          src="./assets/png/aiman.jpg"
+          alt="Aiman Sartaj Logo Image"
           class="header__logo-img"
         />
       </div>
-      <span class="header__logo-sub">John Doe</span>
+      <span class="header__logo-sub">Aiman Sartaj</span>
     </div>
     <div class="header__main">
       <ul class="header__links">
@@ -233,7 +233,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
 <!-- **** Hero Section of Homepage **** -->
 <section class="home-hero">
   <div class="home-hero__content">
-    <h1 class="heading-primary">Hey, My name is John Doe</h1>
+    <h1 class="heading-primary">Hey, My name is Aiman Sartaj</h1>
     <div class="home-hero__info">
       <p class="text-primary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
@@ -325,7 +325,7 @@ Go to `/index.html` and fill your information, there are 6 sections:
         <div class="about__content-details">
           <p class="about__content-details-para">
             Hey! It's
-            <strong>John Doe</strong>
+            <strong>Aiman Sartaj</strong>
             and I'm a <strong> Frontend Web Developer </strong> located in Los
             Angeles. I've done
             <strong> remote </strong>
@@ -592,7 +592,7 @@ If you like to know how to submit forms so you can receive the form details in y
         </div>
       </div>
       <div class="main-footer__row main-footer__row-2">
-        <h4 class="heading heading-sm text-lt">John Doe</h4>
+        <h4 class="heading heading-sm text-lt">Aiman Sartaj</h4>
         <p class="main-footer__short-desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
           tempora explicabo quae quod deserunt
@@ -603,7 +603,7 @@ If you like to know how to submit forms so you can receive the form details in y
     <div class="main-footer__lower">
       &copy; Copyright 2021. Made by
       <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-        >Ram Maheshwari</a
+        >Aiman Sartaj</a
       >
     </div>
   </div>
@@ -779,7 +779,7 @@ If you like this project then give it a **Github** star by pressing the **Star**
 
 ## Author 👨‍💻
 
-- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
+- **Aiman Sartaj** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
 
 <br>
 
