@@ -1,93 +1,292 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07080c">
-<script>/* Set the theme before first paint so there is no flash. */
-(function(){var d=document.documentElement,t;try{t=localStorage.getItem('theme')}catch(e){}
-d.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');d.classList.add('js')})()</script>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Fonts load without blocking first paint; the page renders in the system font until they arrive. -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap"></noscript>
-<title>Aiman Sartaj — Senior Software Engineer (Flutter, Mobile &amp; Web)</title>
-<meta name="description" content="Aiman Sartaj is a senior software engineer with 4+ years of experience building mobile and web products with Flutter, Laravel and React — from fintech platforms to sports, HR and social apps.">
-<meta name="author" content="Aiman Sartaj">
-<link rel="canonical" href="https://aiman-khan.github.io/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://aiman-khan.github.io/">
-<meta property="og:title" content="Aiman Sartaj — Senior Software Engineer (Flutter, Mobile &amp; Web)">
-<meta property="og:description" content="Aiman Sartaj is a senior software engineer with 4+ years of experience building mobile and web products with Flutter, Laravel and React — from fintech platforms to sports, HR and social apps.">
-<meta property="og:image" content="https://aiman-khan.github.io/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Aiman Sartaj", "url": "https://aiman-khan.github.io/", "jobTitle": "Senior Software Engineer", "email": "mailto:aiman.dev.s@gmail.com", "image": "https://aiman-khan.github.io/assets/img/aiman-320.webp", "sameAs": ["https://www.linkedin.com/in/aiman-s-khan/", "https://github.com/aiman-khan", "https://medium.com/@aiman.dev"], "knowsAbout": ["Flutter", "Dart", "Laravel", "React", "Firebase", "Mobile app development", "REST APIs"]}</script>
-<script src="js/main.js?v=2" defer></script>
-</head>
-<body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
-<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
-<symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.500 4H15"/></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
-<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
-<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></symbol>
-<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
-<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
-<symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.500" width="10" height="19" rx="2.500"/><path d="M11 18.500h2"/></symbol>
-<symbol id="i-server" viewBox="0 0 24 24"><rect x="3.500" y="4" width="17" height="7" rx="2"/><rect x="3.500" y="13" width="17" height="7" rx="2"/><path d="M7 7.500h.01M7 16.500h.01"/></symbol>
-<symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
-<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.900 5.600L19.500 10.500l-5.600 1.900L12 18l-1.900-5.600L4.500 10.500l5.600-1.900L12 3z"/><path d="M19 16v4M17 18h4"/></symbol>
-<symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.160 19.490c.5.090.680-.220.680-.480v-1.700c-2.780.600-3.370-1.340-3.370-1.340-.450-1.160-1.110-1.470-1.110-1.470-.910-.620.070-.610.070-.610 1 .070 1.530 1.030 1.530 1.030.900 1.530 2.340 1.090 2.910.830.090-.650.350-1.090.630-1.340-2.220-.250-4.550-1.110-4.550-4.940 0-1.090.390-1.980 1.030-2.680-.100-.250-.450-1.270.100-2.650 0 0 .840-.270 2.750 1.020a9.560 9.560 0 0 1 5 0c1.910-1.290 2.750-1.020 2.750-1.020.550 1.380.200 2.400.100 2.650.640.700 1.030 1.590 1.030 2.680 0 3.840-2.340 4.680-4.570 4.930.360.310.680.920.680 1.850v2.750c0 .270.180.580.690.480A10 10 0 0 0 12 2z"/></symbol>
-<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.980 3.500a2.500 2.500 0 1 1 0 5 2.500 2.500 0 0 1 0-5zM3 9.750h4V21H3zM9.500 9.750h3.800v1.540h.050c.530-1 1.830-1.800 3.650-1.800 3.900 0 4.500 2.450 4.500 5.650V21h-4v-5.200c0-1.240-.020-2.840-1.730-2.840-1.730 0-2 1.350-2 2.750V21h-4z"/></symbol>
-<symbol id="i-medium" viewBox="0 0 24 24"><ellipse cx="7" cy="12" rx="5" ry="5.200"/><ellipse cx="16" cy="12" rx="2.500" ry="4.800"/><ellipse cx="21" cy="12" rx="1" ry="4.200"/></symbol>
-</defs></svg>
-<a class="skip" href="#main">Skip to content</a>
-<div class="progress" aria-hidden="true"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07080c" />
+    <script>
+      /* Set the theme before first paint so there is no flash. */
+      (function () {
+        var d = document.documentElement,
+          t;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        d.dataset.theme =
+          t ||
+          (matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark");
+        d.classList.add("js");
+      })();
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/style.css?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking first paint; the page renders in the system font until they arrive. -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap"
+    /></noscript>
+    <title>
+      Aiman Sartaj — Senior Software Engineer (Flutter, Mobile &amp; Web)
+    </title>
+    <meta
+      name="description"
+      content="Aiman Sartaj is a senior software engineer with 4+ years of experience building mobile and web products with Flutter, Laravel and React — from fintech platforms to sports, HR and social apps."
+    />
+    <meta name="author" content="Aiman Sartaj" />
+    <link rel="canonical" href="https://aiman-khan.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aiman-khan.github.io/" />
+    <meta
+      property="og:title"
+      content="Aiman Sartaj — Senior Software Engineer (Flutter, Mobile &amp; Web)"
+    />
+    <meta
+      property="og:description"
+      content="Aiman Sartaj is a senior software engineer with 4+ years of experience building mobile and web products with Flutter, Laravel and React — from fintech platforms to sports, HR and social apps."
+    />
+    <meta
+      property="og:image"
+      content="https://aiman-khan.github.io/assets/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aiman Sartaj",
+        "url": "https://aiman-khan.github.io/",
+        "jobTitle": "Senior Software Engineer",
+        "email": "mailto:aiman.dev.s@gmail.com",
+        "image": "https://aiman-khan.github.io/assets/img/aiman-320.webp",
+        "sameAs": [
+          "https://www.linkedin.com/in/aiman-s-khan/",
+          "https://github.com/aiman-khan",
+          "https://medium.com/@aiman.dev"
+        ],
+        "knowsAbout": [
+          "Flutter",
+          "Dart",
+          "Laravel",
+          "React",
+          "Firebase",
+          "Mobile app development",
+          "REST APIs"
+        ]
+      }
+    </script>
+    <script src="js/main.js?v=2" defer></script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M7 17 17 7M8 7h9v9" />
+        </symbol>
+        <symbol id="i-down" viewBox="0 0 24 24">
+          <path d="M12 5v14M6 13l6 6 6-6" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="3" />
+          <path d="m4 7 8 6 8-6" />
+        </symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24">
+          <rect x="9" y="9" width="11" height="11" rx="2.5" />
+          <path d="M5 15V6.5A2.5 2.5 0 0 1 7.500 4H15" />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path d="m5 12.500 4.500 4.500L19 7.500" />
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"
+          />
+        </symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24">
+          <path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 8h16M4 16h16" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <rect x="7" y="2.500" width="10" height="19" rx="2.500" />
+          <path d="M11 18.500h2" />
+        </symbol>
+        <symbol id="i-server" viewBox="0 0 24 24">
+          <rect x="3.500" y="4" width="17" height="7" rx="2" />
+          <rect x="3.500" y="13" width="17" height="7" rx="2" />
+          <path d="M7 7.500h.01M7 16.500h.01" />
+        </symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24">
+          <path d="m12 3 9 5-9 5-9-5 9-5z" />
+          <path d="m3 13 9 5 9-5" />
+        </symbol>
+        <symbol id="i-spark" viewBox="0 0 24 24">
+          <path
+            d="M12 3l1.900 5.600L19.500 10.500l-5.600 1.900L12 18l-1.900-5.600L4.500 10.500l5.600-1.900L12 3z"
+          />
+          <path d="M19 16v4M17 18h4" />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24">
+          <path
+            d="M12 2a10 10 0 0 0-3.160 19.490c.5.090.680-.220.680-.480v-1.700c-2.780.600-3.370-1.340-3.370-1.340-.450-1.160-1.110-1.470-1.110-1.470-.910-.620.070-.610.070-.610 1 .070 1.530 1.030 1.530 1.030.900 1.530 2.340 1.090 2.910.830.090-.650.350-1.090.630-1.340-2.220-.250-4.550-1.110-4.550-4.940 0-1.090.390-1.980 1.030-2.680-.100-.250-.450-1.270.100-2.650 0 0 .840-.270 2.750 1.020a9.560 9.560 0 0 1 5 0c1.910-1.290 2.750-1.020 2.750-1.020.550 1.380.200 2.400.100 2.650.640.700 1.030 1.590 1.030 2.680 0 3.840-2.340 4.680-4.570 4.930.360.310.680.920.680 1.850v2.750c0 .270.180.580.690.480A10 10 0 0 0 12 2z"
+          />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <path
+            d="M4.980 3.500a2.500 2.500 0 1 1 0 5 2.500 2.500 0 0 1 0-5zM3 9.750h4V21H3zM9.500 9.750h3.800v1.540h.050c.530-1 1.830-1.800 3.650-1.800 3.900 0 4.500 2.450 4.500 5.650V21h-4v-5.200c0-1.240-.020-2.840-1.730-2.840-1.730 0-2 1.350-2 2.750V21h-4z"
+          />
+        </symbol>
+        <symbol id="i-medium" viewBox="0 0 24 24">
+          <ellipse cx="7" cy="12" rx="5" ry="5.200" />
+          <ellipse cx="16" cy="12" rx="2.500" ry="4.800" />
+          <ellipse cx="21" cy="12" rx="1" ry="4.200" />
+        </symbol>
+      </defs>
+    </svg>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"></div>
 
-<header class="nav">
-  <div class="wrap nav__in">
-    <a class="brand" href="#top" aria-label="Aiman Sartaj — home"><span class="brand__mark">AS</span>Aiman Sartaj</a>
-    <nav class="nav__links" aria-label="Primary"><a class="nav__link" href="#work">Work</a><a class="nav__link" href="#about">About</a><a class="nav__link" href="#skills">Skills</a><a class="nav__link" href="#contact">Contact</a></nav>
-    <div class="nav__right">
-      <button class="iconbtn theme" type="button" data-theme-toggle aria-label="Switch between dark and light theme"><svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg></button>
-      <a class="btn btn--sm nav__cta" href="mailto:aiman.dev.s@gmail.com">Let’s talk</a>
-      <button class="iconbtn burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg class="icon i-menu" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg></button>
-    </div>
-  </div>
-</header>
-<div class="menu" id="menu">
-  <a class="menu__link" href="#work">Work<span>01</span></a><a class="menu__link" href="#about">About<span>02</span></a><a class="menu__link" href="#skills">Skills<span>03</span></a><a class="menu__link" href="#contact">Contact<span>04</span></a>
-  <a class="btn" href="mailto:aiman.dev.s@gmail.com"><svg class="icon " aria-hidden="true"><use href="#i-mail"/></svg>Let’s talk</a>
-</div>
-
-<main id="main">
-  <!-- ============================== HERO ============================== -->
-  <section class="hero" id="top">
-    <div class="hero__bg" aria-hidden="true"><div class="orb orb--a"></div><div class="orb orb--b"></div></div>
-    <div class="wrap">
-      <div class="hero__grid">
-        <div>
-          <p class="status rise" style="--i:0"><i></i>Open to new projects &amp; roles</p>
-          <h1 class="rise" style="--i:1">I build mobile &amp; web products people <span class="serif grad">love to use.</span></h1>
-          <p class="hero__sub rise" style="--i:2">I’m <strong>Aiman Sartaj</strong>, a <strong>Senior Software Engineer</strong> with 4+ years of experience shipping Flutter apps and the Laravel backends behind them — for fintech, sports, HR and social products.</p>
-          <div class="hero__cta rise" style="--i:3">
-            <a class="btn" href="#work">View my work <svg class="icon " aria-hidden="true"><use href="#i-down"/></svg></a>
-            <a class="btn btn--ghost" href="mailto:aiman.dev.s@gmail.com"><svg class="icon " aria-hidden="true"><use href="#i-mail"/></svg>Get in touch</a>
-          </div>
-          <div class="hero__social rise" style="--i:4"><a class="iconbtn" href="https://www.linkedin.com/in/aiman-s-khan/" target="_blank" rel="noopener me" aria-label="LinkedIn"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-linkedin"/></svg></a><a class="iconbtn" href="https://github.com/aiman-khan" target="_blank" rel="noopener me" aria-label="GitHub"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg></a><a class="iconbtn" href="https://medium.com/@aiman.dev" target="_blank" rel="noopener me" aria-label="Medium"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-medium"/></svg></a></div>
+    <header class="nav">
+      <div class="wrap nav__in">
+        <a class="brand" href="#top" aria-label="Aiman Sartaj — home"
+          ><span class="brand__mark">AS</span>Aiman Sartaj</a
+        >
+        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="#work">Work</a
+          ><a class="nav__link" href="#about">About</a
+          ><a class="nav__link" href="#skills">Skills</a
+          ><a class="nav__link" href="#contact">Contact</a>
+        </nav>
+        <div class="nav__right">
+          <button
+            class="iconbtn theme"
+            type="button"
+            data-theme-toggle
+            aria-label="Switch between dark and light theme"
+          >
+            <svg class="icon i-sun" aria-hidden="true">
+              <use href="#i-sun" /></svg
+            ><svg class="icon i-moon" aria-hidden="true">
+              <use href="#i-moon" />
+            </svg>
+          </button>
+          <a class="btn btn--sm nav__cta" href="mailto:aiman.dev.s@gmail.com"
+            >Let’s talk</a
+          >
+          <button
+            class="iconbtn burger"
+            type="button"
+            aria-label="Menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <svg class="icon i-menu" aria-hidden="true">
+              <use href="#i-menu" /></svg
+            ><svg class="icon i-close" aria-hidden="true">
+              <use href="#i-close" />
+            </svg>
+          </button>
         </div>
-        <div class="rise" style="--i:3">
-          <div class="code" aria-hidden="true">
-            <div class="code__bar"><b></b><b></b><b></b><span>aiman.dart</span></div>
-<pre><span class="k">class</span> <span class="t">Aiman</span> <span class="k">extends</span> <span class="t">SoftwareEngineer</span> {
+      </div>
+    </header>
+    <div class="menu" id="menu">
+      <a class="menu__link" href="#work">Work<span>01</span></a
+      ><a class="menu__link" href="#about">About<span>02</span></a
+      ><a class="menu__link" href="#skills">Skills<span>03</span></a
+      ><a class="menu__link" href="#contact">Contact<span>04</span></a>
+      <a class="btn" href="mailto:aiman.dev.s@gmail.com"
+        ><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>Let’s
+        talk</a
+      >
+    </div>
+
+    <main id="main">
+      <!-- ============================== HERO ============================== -->
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="orb orb--a"></div>
+          <div class="orb orb--b"></div>
+        </div>
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <p class="status rise" style="--i: 0">
+                <i></i>Open to new projects &amp; roles
+              </p>
+              <h1 class="rise" style="--i: 1">
+                I build mobile &amp; web products people
+                <span class="serif grad">love to use.</span>
+              </h1>
+              <p class="hero__sub rise" style="--i: 2">
+                I’m <strong>Aiman Sartaj</strong>, a
+                <strong>Senior Software Engineer</strong> with 4+ years of
+                experience shipping complete Flutter apps — for fintech, sports,
+                HR and social products.
+              </p>
+              <div class="hero__cta rise" style="--i: 3">
+                <a class="btn" href="#work"
+                  >View my work
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-down" /></svg
+                ></a>
+                <a class="btn btn--ghost" href="mailto:aiman.dev.s@gmail.com"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#i-mail" /></svg
+                  >Get in touch</a
+                >
+              </div>
+              <div class="hero__social rise" style="--i: 4">
+                <a
+                  class="iconbtn"
+                  href="https://www.linkedin.com/in/aiman-s-khan/"
+                  target="_blank"
+                  rel="noopener me"
+                  aria-label="LinkedIn"
+                  ><svg class="icon icon--fill" aria-hidden="true">
+                    <use href="#i-linkedin" /></svg></a
+                ><a
+                  class="iconbtn"
+                  href="https://github.com/aiman-khan"
+                  target="_blank"
+                  rel="noopener me"
+                  aria-label="GitHub"
+                  ><svg class="icon icon--fill" aria-hidden="true">
+                    <use href="#i-github" /></svg></a
+                ><a
+                  class="iconbtn"
+                  href="https://medium.com/@aiman.dev"
+                  target="_blank"
+                  rel="noopener me"
+                  aria-label="Medium"
+                  ><svg class="icon icon--fill" aria-hidden="true">
+                    <use href="#i-medium" /></svg
+                ></a>
+              </div>
+            </div>
+            <div class="rise" style="--i: 3">
+              <div class="code" aria-hidden="true">
+                <div class="code__bar">
+                  <b></b><b></b><b></b><span>aiman.dart</span>
+                </div>
+                <pre><span class="k">class</span> <span class="t">Aiman</span> <span class="k">extends</span> <span class="t">SoftwareEngineer</span> {
   <span class="k">final</span> role = <span class="s">'Senior Software Engineer'</span>;
   <span class="k">final</span> experience = <span class="s">'4+ years'</span>;
   <span class="k">final</span> stack = [<span class="s">'Flutter'</span>, <span class="s">'Laravel'</span>, <span class="s">'React'</span>];
@@ -98,397 +297,3173 @@ d.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':
   <span class="t">Future</span>&lt;<span class="t">Product</span>&gt; <span class="f">build</span>(<span class="t">Idea</span> idea) <span class="k">async</span> =&gt;
       <span class="f">ship</span>(idea, polished: <span class="k">true</span>);<span class="caret"></span>
 }</pre>
-            <div class="code__tag"><svg class="icon " aria-hidden="true"><use href="#i-phone"/></svg>iOS · Android · Web</div>
+                <div class="code__tag">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-phone" /></svg
+                  >iOS · Android · Web
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="stats rise" style="--i: 5">
+            <div class="stat">
+              <p class="stat__n"><span data-count="4">4</span>+</p>
+              <p class="stat__l">Years of experience</p>
+            </div>
+            <div class="stat">
+              <p class="stat__n"><span data-count="8">8</span></p>
+              <p class="stat__l">Products featured here</p>
+            </div>
+            <div class="stat">
+              <p class="stat__n"><span data-count="3">3</span></p>
+              <p class="stat__l">Platforms: iOS, Android, web</p>
+            </div>
+            <div class="stat">
+              <p class="stat__n"><span data-count="6">6</span>+</p>
+              <p class="stat__l">Industries, fintech to wellness</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Flutter</span><span>Dart</span><span>Laravel</span
+          ><span>React</span><span>Firebase</span><span>REST APIs</span
+          ><span>Stripe</span><span>Google Maps</span><span>Agora</span
+          ><span>Android</span><span>JavaScript</span><span>Solidity</span
+          ><span>Flutter</span><span>Dart</span><span>Laravel</span
+          ><span>React</span><span>Firebase</span><span>REST APIs</span
+          ><span>Stripe</span><span>Google Maps</span><span>Agora</span
+          ><span>Android</span><span>JavaScript</span><span>Solidity</span>
         </div>
       </div>
 
-      <div class="stats rise" style="--i:5">
-        <div class="stat"><p class="stat__n"><span data-count="4">4</span>+</p><p class="stat__l">Years of experience</p></div>
-        <div class="stat"><p class="stat__n"><span data-count="8">8</span></p><p class="stat__l">Products featured here</p></div>
-        <div class="stat"><p class="stat__n"><span data-count="3">3</span></p><p class="stat__l">Platforms: iOS, Android, web</p></div>
-        <div class="stat"><p class="stat__n"><span data-count="6">6</span>+</p><p class="stat__l">Industries, fintech to wellness</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Flutter</span><span>Dart</span><span>Laravel</span><span>React</span><span>Firebase</span><span>REST APIs</span><span>Stripe</span><span>Google Maps</span><span>Agora</span><span>Android</span><span>JavaScript</span><span>Solidity</span><span>Flutter</span><span>Dart</span><span>Laravel</span><span>React</span><span>Firebase</span><span>REST APIs</span><span>Stripe</span><span>Google Maps</span><span>Agora</span><span>Android</span><span>JavaScript</span><span>Solidity</span></div></div>
-
-  <!-- ============================== WORK ==============================
+      <!-- ============================== WORK ==============================
        To swap an illustration for a real screenshot, replace the <svg> inside
        that project's two <div class="stage"> blocks (card + dialog) with:
        <img src="assets/img/NAME.webp" width="1440" height="990" alt="…" loading="lazy" decoding="async">
        ================================================================== -->
-  <section class="section" id="work">
-    <div class="wrap">
-      <div class="section-head">
+      <section class="section" id="work">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow reveal">Selected work</p>
+              <h2 class="h2 reveal">
+                Products I’ve helped <span class="serif grad">ship.</span>
+              </h2>
+            </div>
+            <p class="lede reveal">
+              From venture platforms and AI-powered HR tools to fan apps and
+              live-streaming social networks. Open any project for the full case
+              study.
+            </p>
+          </div>
+          <div class="work">
+            <article
+              class="card reveal card--wide"
+              id="quickers-venture"
+              style="--hue: 160; --i: 0"
+            >
+              <div class="stage">
+                <svg
+                  viewBox="24 32 592 350"
+                  role="img"
+                  aria-label="Illustration of the Quickers Venture investor dashboard"
+                >
+                  <rect
+                    x="50"
+                    y="62"
+                    width="552"
+                    height="300"
+                    rx="14"
+                    fill="#0b1020"
+                    opacity=".10"
+                  />
+                  <rect
+                    x="44"
+                    y="52"
+                    width="552"
+                    height="300"
+                    rx="14"
+                    fill="#fff"
+                  />
+                  <circle cx="62" cy="74" r="5" fill="#ff8a80" />
+                  <circle cx="78" cy="74" r="5" fill="#ffd27a" />
+                  <circle cx="94" cy="74" r="5" fill="#8fe3a8" />
+                  <rect
+                    x="230"
+                    y="66"
+                    width="180"
+                    height="16"
+                    rx="8"
+                    fill="#e9eef3"
+                  />
+                  <rect x="44" y="92" width="552" height="1" fill="#e9eef3" />
+                  <rect x="164" y="92" width="1" height="260" fill="#e9eef3" />
+                  <rect
+                    x="64"
+                    y="118"
+                    width="62"
+                    height="7"
+                    rx="3.5"
+                    fill="#12a67f"
+                  />
+                  <rect
+                    x="64"
+                    y="144"
+                    width="48"
+                    height="7"
+                    rx="3.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="64"
+                    y="170"
+                    width="56"
+                    height="7"
+                    rx="3.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="64"
+                    y="196"
+                    width="44"
+                    height="7"
+                    rx="3.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="64"
+                    y="222"
+                    width="52"
+                    height="7"
+                    rx="3.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="186"
+                    y="96"
+                    width="126"
+                    height="56"
+                    rx="10"
+                    fill="#f6f8fa"
+                  />
+                  <rect
+                    x="198"
+                    y="108"
+                    width="44"
+                    height="6"
+                    rx="3"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="198"
+                    y="124"
+                    width="70"
+                    height="12"
+                    rx="4"
+                    fill="#12a67f"
+                  />
+                  <rect
+                    x="326"
+                    y="96"
+                    width="126"
+                    height="56"
+                    rx="10"
+                    fill="#f6f8fa"
+                  />
+                  <rect
+                    x="338"
+                    y="108"
+                    width="44"
+                    height="6"
+                    rx="3"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="338"
+                    y="124"
+                    width="54"
+                    height="12"
+                    rx="4"
+                    fill="#182230"
+                  />
+                  <rect
+                    x="466"
+                    y="96"
+                    width="126"
+                    height="56"
+                    rx="10"
+                    fill="#f6f8fa"
+                  />
+                  <rect
+                    x="478"
+                    y="108"
+                    width="44"
+                    height="6"
+                    rx="3"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="478"
+                    y="124"
+                    width="62"
+                    height="12"
+                    rx="4"
+                    fill="#182230"
+                  />
+                  <rect
+                    x="186"
+                    y="164"
+                    width="236"
+                    height="172"
+                    rx="10"
+                    fill="#f6f8fa"
+                  />
+                  <rect
+                    x="200"
+                    y="178"
+                    width="70"
+                    height="7"
+                    rx="3.5"
+                    fill="#182230"
+                    opacity=".75"
+                  />
+                  <path
+                    d="M206 250 L236 236 L266 242 L296 214 L326 222 L356 196 L404 176"
+                    fill="none"
+                    stroke="#12a67f"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    opacity=".55"
+                  />
+                  <rect
+                    x="214"
+                    y="228"
+                    width="16"
+                    height="34"
+                    rx="4"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="244"
+                    y="210"
+                    width="16"
+                    height="52"
+                    rx="4"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="274"
+                    y="218"
+                    width="16"
+                    height="44"
+                    rx="4"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="304"
+                    y="184"
+                    width="16"
+                    height="78"
+                    rx="4"
+                    fill="#12a67f"
+                  />
+                  <rect
+                    x="334"
+                    y="202"
+                    width="16"
+                    height="60"
+                    rx="4"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="364"
+                    y="192"
+                    width="16"
+                    height="70"
+                    rx="4"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="394"
+                    y="158"
+                    width="16"
+                    height="104"
+                    rx="4"
+                    fill="#12a67f"
+                  />
+                  <rect
+                    x="436"
+                    y="164"
+                    width="162"
+                    height="172"
+                    rx="10"
+                    fill="none"
+                    stroke="#e9eef3"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="462" cy="178" r="11" fill="#ffd28a" />
+                  <rect
+                    x="482"
+                    y="171"
+                    width="58"
+                    height="6"
+                    rx="3"
+                    fill="#182230"
+                    opacity=".75"
+                  />
+                  <rect
+                    x="482"
+                    y="182"
+                    width="36"
+                    height="5"
+                    rx="2.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="552"
+                    y="170"
+                    width="34"
+                    height="16"
+                    rx="8"
+                    fill="#bdeedd"
+                  />
+                  <circle cx="462" cy="218" r="11" fill="#b9c4ff" />
+                  <rect
+                    x="482"
+                    y="211"
+                    width="58"
+                    height="6"
+                    rx="3"
+                    fill="#182230"
+                    opacity=".75"
+                  />
+                  <rect
+                    x="482"
+                    y="222"
+                    width="36"
+                    height="5"
+                    rx="2.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="552"
+                    y="210"
+                    width="34"
+                    height="16"
+                    rx="8"
+                    fill="#bdeedd"
+                  />
+                  <circle cx="462" cy="258" r="11" fill="#ffb4b4" />
+                  <rect
+                    x="482"
+                    y="251"
+                    width="58"
+                    height="6"
+                    rx="3"
+                    fill="#182230"
+                    opacity=".75"
+                  />
+                  <rect
+                    x="482"
+                    y="262"
+                    width="36"
+                    height="5"
+                    rx="2.5"
+                    fill="#e9eef3"
+                  />
+                  <rect
+                    x="552"
+                    y="250"
+                    width="34"
+                    height="16"
+                    rx="8"
+                    fill="#bdeedd"
+                  />
+                  <rect
+                    x="450"
+                    y="300"
+                    width="134"
+                    height="24"
+                    rx="12"
+                    fill="#12a67f"
+                  />
+                </svg>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>01</span><b>Fintech · Web platform</b>
+                </p>
+                <h3>Quickers Venture</h3>
+                <p class="card__sum">
+                  A venture-building ecosystem that helps startups, incubators
+                  and corporations build and scale new businesses — with the
+                  tools, resources, investors and mentors to do it.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Venture platform</li>
+                  <li class="chip">Investor marketplace</li>
+                  <li class="chip">Digital KYC</li>
+                  <li class="chip">Portfolio tracking</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="quickers-venture"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                  <div class="card__links">
+                    <a
+                      class="iconbtn"
+                      href="https://quickers.vc"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Quickers Venture: visit quickers.vc"
+                      ><svg class="icon" aria-hidden="true">
+                        <use href="#i-arrow" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card reveal"
+              id="skill-nova"
+              style="--hue: 262; --i: 1"
+            >
+              <div class="stage">
+                <svg
+                  viewBox="44 24 558 384"
+                  role="img"
+                  aria-label="Illustration of the Skill Nova app: growth plan, skills and AI career assistant"
+                >
+                  <rect
+                    x="70"
+                    y="92"
+                    width="200"
+                    height="124"
+                    rx="14"
+                    fill="#0b1020"
+                    opacity=".10"
+                  />
+                  <rect
+                    x="64"
+                    y="82"
+                    width="200"
+                    height="124"
+                    rx="14"
+                    fill="#fff"
+                  />
+                  <g transform="translate(64 82)">
+                    <rect
+                      x="18"
+                      y="18"
+                      width="62"
+                      height="7"
+                      rx="3.5"
+                      fill="#1a1c2b"
+                      opacity=".8"
+                    />
+                    <rect
+                      x="18"
+                      y="32"
+                      width="40"
+                      height="6"
+                      rx="3"
+                      fill="#eceef4"
+                    />
+                    <rect
+                      x="18"
+                      y="64"
+                      width="40"
+                      height="22"
+                      rx="8"
+                      fill="#e3f8ef"
+                    />
+                    <circle cx="30" cy="75" r="4" fill="#18b27f" />
+                    <rect
+                      x="84"
+                      y="84"
+                      width="12"
+                      height="20"
+                      rx="4"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="106"
+                      y="74"
+                      width="12"
+                      height="30"
+                      rx="4"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="128"
+                      y="80"
+                      width="12"
+                      height="24"
+                      rx="4"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="150"
+                      y="66"
+                      width="12"
+                      height="38"
+                      rx="4"
+                      fill="#6d4df2"
+                    />
+                    <rect
+                      x="172"
+                      y="76"
+                      width="12"
+                      height="28"
+                      rx="4"
+                      fill="#ddd6ff"
+                    />
+                  </g>
+                  <rect
+                    x="243"
+                    y="52"
+                    width="170"
+                    height="340"
+                    rx="28"
+                    fill="#0b1020"
+                    opacity=".14"
+                  />
+                  <rect
+                    x="235"
+                    y="40"
+                    width="170"
+                    height="340"
+                    rx="28"
+                    fill="#12141d"
+                  />
+                  <rect
+                    x="242"
+                    y="47"
+                    width="156"
+                    height="326"
+                    rx="22"
+                    fill="#fff"
+                  />
+                  <rect
+                    x="298.0"
+                    y="54"
+                    width="44"
+                    height="9"
+                    rx="4.5"
+                    fill="#12141d"
+                  />
+                  <g transform="translate(242 47)">
+                    <rect
+                      x="16"
+                      y="36"
+                      width="64"
+                      height="8"
+                      rx="4"
+                      fill="#1a1c2b"
+                    />
+                    <rect
+                      x="16"
+                      y="50"
+                      width="44"
+                      height="6"
+                      rx="3"
+                      fill="#eceef4"
+                    />
+                    <circle cx="134" cy="44" r="12" fill="#ddd6ff" />
+                    <rect
+                      x="12"
+                      y="70"
+                      width="132"
+                      height="126"
+                      rx="16"
+                      fill="#f6f5ff"
+                    />
+                    <circle
+                      cx="78"
+                      cy="128"
+                      r="38"
+                      fill="none"
+                      stroke="#ddd6ff"
+                      stroke-width="10"
+                    />
+                    <circle
+                      cx="78"
+                      cy="128"
+                      r="38"
+                      fill="none"
+                      stroke="#6d4df2"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke-dasharray="172 239"
+                      transform="rotate(-90 78 128)"
+                    />
+                    <text
+                      x="78"
+                      y="134"
+                      text-anchor="middle"
+                      font-size="18"
+                      font-weight="700"
+                      fill="#1a1c2b"
+                      font-family="inherit"
+                    >
+                      72%
+                    </text>
+                    <rect
+                      x="54"
+                      y="178"
+                      width="48"
+                      height="6"
+                      rx="3"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="16"
+                      y="214"
+                      width="50"
+                      height="6"
+                      rx="3"
+                      fill="#1a1c2b"
+                      opacity=".7"
+                    />
+                    <rect
+                      x="16"
+                      y="226"
+                      width="124"
+                      height="7"
+                      rx="3.5"
+                      fill="#eceef4"
+                    />
+                    <rect
+                      x="16"
+                      y="226"
+                      width="104"
+                      height="7"
+                      rx="3.5"
+                      fill="#6d4df2"
+                    />
+                    <rect
+                      x="16"
+                      y="244"
+                      width="50"
+                      height="6"
+                      rx="3"
+                      fill="#1a1c2b"
+                      opacity=".7"
+                    />
+                    <rect
+                      x="16"
+                      y="256"
+                      width="124"
+                      height="7"
+                      rx="3.5"
+                      fill="#eceef4"
+                    />
+                    <rect
+                      x="16"
+                      y="256"
+                      width="78"
+                      height="7"
+                      rx="3.5"
+                      fill="#6d4df2"
+                    />
+                    <rect
+                      x="16"
+                      y="274"
+                      width="50"
+                      height="6"
+                      rx="3"
+                      fill="#1a1c2b"
+                      opacity=".7"
+                    />
+                    <rect
+                      x="16"
+                      y="286"
+                      width="124"
+                      height="7"
+                      rx="3.5"
+                      fill="#eceef4"
+                    />
+                    <rect
+                      x="16"
+                      y="286"
+                      width="92"
+                      height="7"
+                      rx="3.5"
+                      fill="#6d4df2"
+                    />
+                  </g>
+                  <rect
+                    x="390"
+                    y="206"
+                    width="198"
+                    height="132"
+                    rx="14"
+                    fill="#0b1020"
+                    opacity=".10"
+                  />
+                  <rect
+                    x="384"
+                    y="196"
+                    width="198"
+                    height="132"
+                    rx="14"
+                    fill="#fff"
+                  />
+                  <g transform="translate(384 196)">
+                    <rect
+                      x="20"
+                      y="16"
+                      width="26"
+                      height="26"
+                      rx="9"
+                      fill="#6d4df2"
+                    />
+                    <path d="M33 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fff" />
+                    <rect
+                      x="56"
+                      y="20"
+                      width="76"
+                      height="7"
+                      rx="3.5"
+                      fill="#1a1c2b"
+                      opacity=".8"
+                    />
+                    <rect
+                      x="56"
+                      y="33"
+                      width="50"
+                      height="6"
+                      rx="3"
+                      fill="#eceef4"
+                    />
+                    <rect
+                      x="20"
+                      y="54"
+                      width="158"
+                      height="30"
+                      rx="10"
+                      fill="#f6f5ff"
+                    />
+                    <rect
+                      x="32"
+                      y="62"
+                      width="112"
+                      height="5"
+                      rx="2.5"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="32"
+                      y="72"
+                      width="78"
+                      height="5"
+                      rx="2.5"
+                      fill="#ddd6ff"
+                    />
+                    <rect
+                      x="60"
+                      y="92"
+                      width="118"
+                      height="24"
+                      rx="10"
+                      fill="#6d4df2"
+                    />
+                    <rect
+                      x="72"
+                      y="101"
+                      width="74"
+                      height="5"
+                      rx="2.5"
+                      fill="#fff"
+                      opacity=".85"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="card__body">
+                <p class="card__meta"><span>02</span><b>AI · HR tech</b></p>
+                <h3>Skill Nova</h3>
+                <p class="card__sum">
+                  One platform for HR operations, professional development and
+                  personal career planning — with an AI assistant to guide the
+                  next step.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">AI career assistant</li>
+                  <li class="chip">HR operations</li>
+                  <li class="chip">Growth plans</li>
+                  <li class="chip">Upskilling</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="skill-nova"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card reveal"
+              id="lucentum"
+              style="--hue: 218; --i: 0"
+            >
+              <div class="stage">
+                <svg
+                  viewBox="44 24 548 384"
+                  role="img"
+                  aria-label="Illustration of the Lucentum fan app: match day, tickets and club store"
+                >
+                  <g transform="translate(64 104) rotate(-5 102 56)">
+                    <path
+                      d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z"
+                      fill="#0b1020"
+                      opacity=".12"
+                      transform="translate(6 10)"
+                    />
+                    <path
+                      d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z"
+                      fill="#fff"
+                    />
+                    <rect
+                      x="22"
+                      y="22"
+                      width="44"
+                      height="16"
+                      rx="8"
+                      fill="#f5b83d"
+                    />
+                    <rect
+                      x="22"
+                      y="48"
+                      width="92"
+                      height="8"
+                      rx="4"
+                      fill="#141a2e"
+                      opacity=".85"
+                    />
+                    <rect
+                      x="22"
+                      y="64"
+                      width="60"
+                      height="6"
+                      rx="3"
+                      fill="#e9edf5"
+                    />
+                    <rect
+                      x="22"
+                      y="80"
+                      width="40"
+                      height="6"
+                      rx="3"
+                      fill="#e9edf5"
+                    />
+                    <path
+                      d="M134 12v88"
+                      stroke="#e9edf5"
+                      stroke-width="2"
+                      stroke-dasharray="4 5"
+                    />
+                    <rect x="150" y="34" width="2" height="44" fill="#141a2e" />
+                    <rect x="155" y="34" width="3" height="44" fill="#141a2e" />
+                    <rect
+                      x="160"
+                      y="34"
+                      width="1.5"
+                      height="44"
+                      fill="#141a2e"
+                    />
+                    <rect x="165" y="34" width="3" height="44" fill="#141a2e" />
+                    <rect x="170" y="34" width="2" height="44" fill="#141a2e" />
+                    <rect
+                      x="175"
+                      y="34"
+                      width="1.5"
+                      height="44"
+                      fill="#141a2e"
+                    />
+                    <rect x="180" y="34" width="3" height="44" fill="#141a2e" />
+                    <rect x="185" y="34" width="2" height="44" fill="#141a2e" />
+                  </g>
+                  <rect
+                    x="243"
+                    y="52"
+                    width="170"
+                    height="340"
+                    rx="28"
+                    fill="#0b1020"
+                    opacity=".14"
+                  />
+                  <rect
+                    x="235"
+                    y="40"
+                    width="170"
+                    height="340"
+                    rx="28"
+                    fill="#12141d"
+                  />
+                  <rect
+                    x="242"
+                    y="47"
+                    width="156"
+                    height="326"
+                    rx="22"
+                    fill="#fff"
+                  />
+                  <rect
+                    x="298.0"
+                    y="54"
+                    width="44"
+                    height="9"
+                    rx="4.5"
+                    fill="#12141d"
+                  />
+                  <g transform="translate(242 47)">
+                    <rect
+                      x="16"
+                      y="36"
+                      width="58"
+                      height="8"
+                      rx="4"
+                      fill="#141a2e"
+                    />
+                    <circle cx="134" cy="42" r="11" fill="#e9edf5" />
+                    <rect
+                      x="12"
+                      y="62"
+                      width="132"
+                      height="96"
+                      rx="16"
+                      fill="#1f4fd8"
+                    />
+                    <rect
+                      x="52"
+                      y="74"
+                      width="52"
+                      height="6"
+                      rx="3"
+                      fill="#fff"
+                      opacity=".6"
+                    />
+                    <circle cx="44" cy="112" r="17" fill="#fff" />
+                    <path d="M44 101l9 5v11l-9 6-9-6v-11z" fill="#1f4fd8" />
+                    <circle cx="112" cy="112" r="17" fill="#fff" />
+                    <circle cx="112" cy="112" r="9" fill="#f5b83d" />
+                    <text
+                      x="78"
+                      y="118"
+                      text-anchor="middle"
+                      font-size="15"
+                      font-weight="700"
+                      fill="#fff"
+                      font-family="inherit"
+                    >
+                      VS
+                    </text>
+                    <rect
+                      x="50"
+                      y="138"
+                      width="56"
+                      height="12"
+                      rx="6"
+                      fill="#fff"
+                      opacity=".22"
+                    />
+                    <rect
+                      x="16"
+                      y="172"
+                      width="54"
+                      height="7"
+                      rx="3.5"
+                      fill="#141a2e"
+                      opacity=".75"
+                    />
+                    <rect
+                      x="12"
+                      y="190"
+                      width="64"
+                      height="72"
+                      rx="12"
+                      fill="#f4f6fb"
+                    />
+                    <rect
+                      x="24"
+                      y="202"
+                      width="40"
+                      height="30"
+                      rx="8"
+                      fill="#f5b83d"
+                      opacity=".85"
+                    />
+                    <rect
+                      x="22"
+                      y="242"
+                      width="34"
+                      height="5"
+                      rx="2.5"
+                      fill="#141a2e"
+                      opacity=".6"
+                    />
+                    <rect
+                      x="22"
+                      y="251"
+                      width="22"
+                      height="5"
+                      rx="2.5"
+                      fill="#e9edf5"
+                    />
+                    <rect
+                      x="80"
+                      y="190"
+                      width="64"
+                      height="72"
+                      rx="12"
+                      fill="#f4f6fb"
+                    />
+                    <rect
+                      x="92"
+                      y="202"
+                      width="40"
+                      height="30"
+                      rx="8"
+                      fill="#c9d6ff"
+                      opacity=".85"
+                    />
+                    <rect
+                      x="90"
+                      y="242"
+                      width="34"
+                      height="5"
+                      rx="2.5"
+                      fill="#141a2e"
+                      opacity=".6"
+                    />
+                    <rect
+                      x="90"
+                      y="251"
+                      width="22"
+                      height="5"
+                      rx="2.5"
+                      fill="#e9edf5"
+                    />
+                    <rect
+                      x="12"
+                      y="276"
+                      width="132"
+                      height="34"
+                      rx="17"
+                      fill="#141a2e"
+                    />
+                    <rect
+                      x="50"
+                      y="290"
+                      width="56"
+                      height="6"
+                      rx="3"
+                      fill="#fff"
+                      opacity=".85"
+                    />
+                  </g>
+                  <rect
+                    x="402"
+                    y="246"
+                    width="176"
+                    height="76"
+                    rx="14"
+                    fill="#0b1020"
+                    opacity=".10"
+                  />
+                  <rect
+                    x="396"
+                    y="236"
+                    width="176"
+                    height="76"
+                    rx="14"
+                    fill="#fff"
+                  />
+                  <g transform="translate(396 236)">
+                    <rect
+                      x="16"
+                      y="16"
+                      width="44"
+                      height="44"
+                      rx="12"
+                      fill="#eef2ff"
+                    />
+                    <path
+                      d="M28 30h3l3 14h13l3-10H33"
+                      fill="none"
+                      stroke="#1f4fd8"
+                      stroke-width="2.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <rect
+                      x="72"
+                      y="22"
+                      width="64"
+                      height="7"
+                      rx="3.5"
+                      fill="#141a2e"
+                      opacity=".8"
+                    />
+                    <rect
+                      x="72"
+                      y="36"
+                      width="40"
+                      height="6"
+                      rx="3"
+                      fill="#e9edf5"
+                    />
+                    <rect
+                      x="72"
+                      y="48"
+                      width="48"
+                      height="8"
+                      rx="4"
+                      fill="#1f4fd8"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>03</span><b>Sports · Mobile app</b>
+                </p>
+                <h3>Lucentum</h3>
+                <p class="card__sum">
+                  A sports club app that puts match days, tickets, memberships
+                  and the club store in every fan&#x27;s pocket.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Ticketing</li>
+                  <li class="chip">E-commerce</li>
+                  <li class="chip">Payments</li>
+                  <li class="chip">Push notifications</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="lucentum"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card reveal card--wide card--flip"
+              id="tmidirect"
+              style="--hue: 28; --i: 1"
+            >
+              <div class="stage">
+                <img
+                  src="assets/img/tmidirect-720.webp"
+                  srcset="
+                    assets/img/tmidirect-720.webp   720w,
+                    assets/img/tmidirect-1440.webp 1440w
+                  "
+                  sizes="(max-width: 900px) 94vw, 640px"
+                  width="1440"
+                  height="998"
+                  alt="TMIDirect app screens"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>04</span><b>Social · Mobile app</b>
+                </p>
+                <h3>TMIDirect</h3>
+                <p class="card__sum">
+                  An Instagram-style social platform where people share posts,
+                  go live, and publish audio podcasts — powered by Firebase and
+                  Agora.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Flutter</li>
+                  <li class="chip">Firebase</li>
+                  <li class="chip">Agora</li>
+                  <li class="chip">Provider</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="tmidirect"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                  <div class="card__links">
+                    <a
+                      class="iconbtn"
+                      href="https://github.com/aiman-khan/tmi_direct"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="TMIDirect: view code"
+                      ><svg class="icon icon--fill" aria-hidden="true">
+                        <use href="#i-github" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card reveal"
+              id="b2b-connect"
+              style="--hue: 354; --i: 0"
+            >
+              <div class="stage">
+                <img
+                  src="assets/img/b2b-connect-720.webp"
+                  srcset="
+                    assets/img/b2b-connect-720.webp   720w,
+                    assets/img/b2b-connect-1440.webp 1440w
+                  "
+                  sizes="(max-width: 900px) 94vw, 560px"
+                  width="1440"
+                  height="992"
+                  alt="B2B Connect app screens"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__meta"><span>05</span><b>B2B · Mobile app</b></p>
+                <h3>B2B Connect</h3>
+                <p class="card__sum">
+                  A B2B marketplace for posting jobs, bidding and managing
+                  orders, with secure payments and live performance statistics.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Flutter</li>
+                  <li class="chip">Stripe</li>
+                  <li class="chip">Google Maps</li>
+                  <li class="chip">REST APIs</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="b2b-connect"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                  <div class="card__links">
+                    <a
+                      class="iconbtn"
+                      href="https://github.com/aiman-khan/neeleez_b2b_app"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="B2B Connect: view code"
+                      ><svg class="icon icon--fill" aria-hidden="true">
+                        <use href="#i-github" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal" id="pirata" style="--hue: 206; --i: 1">
+              <div class="stage">
+                <img
+                  src="assets/img/pirata-720.webp"
+                  srcset="
+                    assets/img/pirata-720.webp   720w,
+                    assets/img/pirata-1440.webp 1440w
+                  "
+                  sizes="(max-width: 900px) 94vw, 560px"
+                  width="1440"
+                  height="987"
+                  alt="Pirata app screens"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>06</span><b>Maps · Mobile app</b>
+                </p>
+                <h3>Pirata</h3>
+                <p class="card__sum">
+                  A location-first app with real-time tracking, interactive maps
+                  and optimal scheduled routes across multiple store visits.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Flutter</li>
+                  <li class="chip">Google Maps</li>
+                  <li class="chip">Live tracking</li>
+                  <li class="chip">REST APIs</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="pirata"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                  <div class="card__links">
+                    <a
+                      class="iconbtn"
+                      href="https://github.com/aiman-khan/pirata"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Pirata: view code"
+                      ><svg class="icon icon--fill" aria-hidden="true">
+                        <use href="#i-github" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card reveal"
+              id="breather"
+              style="--hue: 222; --i: 0"
+            >
+              <div class="stage">
+                <img
+                  src="assets/img/breather-720.webp"
+                  srcset="
+                    assets/img/breather-720.webp   720w,
+                    assets/img/breather-1440.webp 1440w
+                  "
+                  sizes="(max-width: 900px) 94vw, 560px"
+                  width="1438"
+                  height="790"
+                  alt="Breather app screens"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>07</span><b>Wellness · Mobile app</b>
+                </p>
+                <h3>Breather</h3>
+                <p class="card__sum">
+                  A mindfulness app with customisable breathing patterns, a
+                  session scheduler, reminders and a global leaderboard.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Flutter</li>
+                  <li class="chip">Firebase</li>
+                  <li class="chip">Google Sign-In</li>
+                  <li class="chip">Notifications</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="breather"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal" id="rigel" style="--hue: 286; --i: 1">
+              <div class="stage">
+                <img
+                  src="assets/img/rigel-720.webp"
+                  srcset="
+                    assets/img/rigel-720.webp   720w,
+                    assets/img/rigel-1440.webp 1440w
+                  "
+                  sizes="(max-width: 900px) 94vw, 560px"
+                  width="1440"
+                  height="1351"
+                  alt="Rigel app screens"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__meta">
+                  <span>08</span><b>Blockchain · Final-year project</b>
+                </p>
+                <h3>Rigel</h3>
+                <p class="card__sum">
+                  An Upwork-style marketplace where project terms and payments
+                  are enforced by Ethereum smart contracts — with built-in
+                  conflict resolution.
+                </p>
+                <ul class="chips" aria-label="Tags">
+                  <li class="chip">Flutter</li>
+                  <li class="chip">Solidity</li>
+                  <li class="chip">Ethereum</li>
+                  <li class="chip">Firebase</li>
+                </ul>
+                <div class="card__foot">
+                  <button
+                    class="card__open"
+                    type="button"
+                    data-open="rigel"
+                    aria-haspopup="dialog"
+                  >
+                    Case study
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-arrow" />
+                    </svg>
+                  </button>
+                  <div class="card__links">
+                    <a
+                      class="iconbtn"
+                      href="https://github.com/aiman-khan/blockchain-based-freelancing-platform"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Rigel: view code"
+                      ><svg class="icon icon--fill" aria-hidden="true">
+                        <use href="#i-github" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== ABOUT ============================== -->
+      <section class="section" id="about">
+        <div class="wrap about">
+          <div class="about__intro">
+            <p class="eyebrow reveal">About</p>
+            <h2 class="h2 reveal">
+              Engineer first,
+              <span class="serif grad">product-minded</span> always.
+            </h2>
+            <div class="about__me reveal">
+              <img
+                src="assets/img/aiman-160.webp"
+                srcset="
+                  assets/img/aiman-160.webp 1x,
+                  assets/img/aiman-320.webp 2x
+                "
+                width="56"
+                height="56"
+                alt="Aiman Sartaj"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <b>Aiman Sartaj</b><span>Senior Software Engineer</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="about__text reveal">
+              <p>
+                I’m a software engineer who specialises in
+                <strong>Flutter</strong> and <strong>Laravel</strong> — I like
+                owning a feature from the database to the last pixel on the
+                screen.
+              </p>
+              <p>
+                Over the past 4+ years I’ve worked with remote teams and in
+                hands-on roles, building <strong>mobile apps</strong> and
+                <strong>websites</strong> that people use every day:
+                marketplaces, ticketing and e-commerce flows, live maps,
+                streaming, payments.
+              </p>
+              <p>
+                I’m always learning. I’ve built with
+                <strong>blockchain</strong> and explored <strong>AR</strong>,
+                and right now what excites me most is <strong>AI</strong> — and
+                how it changes what a small team can build.
+              </p>
+            </div>
+            <div class="caps">
+              <div class="cap reveal" style="--i: 0">
+                <div class="cap__ico">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-phone" />
+                  </svg>
+                </div>
+                <h3>Mobile apps</h3>
+                <p>
+                  Cross-platform Flutter apps for iOS and Android, from the
+                  first screen to the store release.
+                </p>
+              </div>
+              <div class="cap reveal" style="--i: 1">
+                <div class="cap__ico">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-server" />
+                  </svg>
+                </div>
+                <h3>Backends &amp; APIs</h3>
+                <p>
+                  Laravel services and REST APIs that the app can rely on —
+                  auth, data, payments.
+                </p>
+              </div>
+              <div class="cap reveal" style="--i: 0">
+                <div class="cap__ico">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-layers" />
+                  </svg>
+                </div>
+                <h3>Product features</h3>
+                <p>
+                  The hard parts: payments, ticketing, live maps, streaming,
+                  push notifications.
+                </p>
+              </div>
+              <div class="cap reveal" style="--i: 1">
+                <div class="cap__ico">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-spark" />
+                  </svg>
+                </div>
+                <h3>AI &amp; emerging tech</h3>
+                <p>
+                  AI-assisted products and blockchain smart contracts, applied
+                  where they actually help.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== SKILLS ============================== -->
+      <section class="section skills-sec" id="skills">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow reveal">Skills</p>
+              <h2 class="h2 reveal">
+                The <span class="serif grad">toolbox.</span>
+              </h2>
+            </div>
+            <p class="lede reveal">
+              The technologies I reach for most, and the integrations I’ve
+              shipped in production apps.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skillrow reveal">
+              <h3>Mobile</h3>
+              <ul class="chips">
+                <li class="chip">Flutter</li>
+                <li class="chip">Dart</li>
+                <li class="chip">Android</li>
+                <li class="chip">Java</li>
+                <li class="chip">Provider</li>
+              </ul>
+            </div>
+            <div class="skillrow reveal">
+              <h3>Web</h3>
+              <ul class="chips">
+                <li class="chip">React</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">HTML &amp; CSS</li>
+              </ul>
+            </div>
+            <div class="skillrow reveal">
+              <h3>Backend</h3>
+              <ul class="chips">
+                <li class="chip">Laravel</li>
+                <li class="chip">RESTful APIs</li>
+                <li class="chip">Firebase</li>
+              </ul>
+            </div>
+            <div class="skillrow reveal">
+              <h3>Integrations</h3>
+              <ul class="chips">
+                <li class="chip">Stripe</li>
+                <li class="chip">Google Maps</li>
+                <li class="chip">Agora</li>
+                <li class="chip">Push notifications (FCM)</li>
+                <li class="chip">Google Sign-In</li>
+              </ul>
+            </div>
+            <div class="skillrow reveal">
+              <h3>Blockchain</h3>
+              <ul class="chips">
+                <li class="chip">Solidity</li>
+                <li class="chip">Ethereum</li>
+                <li class="chip">Smart contracts</li>
+              </ul>
+            </div>
+            <div class="skillrow reveal">
+              <h3>Foundations</h3>
+              <ul class="chips">
+                <li class="chip">Git</li>
+                <li class="chip">OOP</li>
+                <li class="chip">Data structures</li>
+                <li class="chip">SDLC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== CONTACT ============================== -->
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="reveal">
+            Have an idea?<br />Let’s <span class="serif grad">build it.</span>
+          </h2>
+          <p class="lede reveal">
+            I’m always happy to talk about new projects, product ideas and
+            engineering roles. Email is the fastest way to reach me.
+          </p>
+          <div class="reveal">
+            <div class="mail">
+              <span class="mail__addr">aiman.dev.s@gmail.com</span>
+              <button
+                class="btn btn--ghost btn--sm mail__copy"
+                type="button"
+                data-copy="aiman.dev.s@gmail.com"
+              >
+                <svg class="icon i-copy" aria-hidden="true">
+                  <use href="#i-copy" /></svg
+                ><svg class="icon i-check" aria-hidden="true">
+                  <use href="#i-check" /></svg
+                ><span>Copy</span>
+              </button>
+              <a
+                class="btn btn--sm"
+                href="mailto:aiman.dev.s@gmail.com?subject=Hello%20Aiman"
+                >Email me
+                <svg class="icon icon--go" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="socials reveal">
+            <a
+              class="btn btn--ghost btn--sm"
+              href="https://www.linkedin.com/in/aiman-s-khan/"
+              target="_blank"
+              rel="noopener me"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-linkedin" /></svg
+              >LinkedIn</a
+            ><a
+              class="btn btn--ghost btn--sm"
+              href="https://github.com/aiman-khan"
+              target="_blank"
+              rel="noopener me"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-github" /></svg
+              >GitHub</a
+            ><a
+              class="btn btn--ghost btn--sm"
+              href="https://medium.com/@aiman.dev"
+              target="_blank"
+              rel="noopener me"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-medium" /></svg
+              >Medium</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot__in">
+        <span
+          >© <span data-year>2026</span> Aiman Sartaj. Designed &amp; built with
+          care.</span
+        >
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <dialog
+      class="cs"
+      id="cs-quickers-venture"
+      aria-labelledby="cs-quickers-venture-t"
+      style="--hue: 160"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Fintech · Web platform</b></p>
+        <h2 id="cs-quickers-venture-t">
+          Quickers Venture <span class="serif">— Venture builder platform</span>
+        </h2>
+        <p>
+          A venture-building ecosystem that helps startups, incubators and
+          corporations build and scale new businesses — with the tools,
+          resources, investors and mentors to do it.
+        </p>
+      </header>
+      <div class="stage">
+        <svg
+          viewBox="24 32 592 350"
+          role="img"
+          aria-label="Illustration of the Quickers Venture investor dashboard"
+        >
+          <rect
+            x="50"
+            y="62"
+            width="552"
+            height="300"
+            rx="14"
+            fill="#0b1020"
+            opacity=".10"
+          />
+          <rect x="44" y="52" width="552" height="300" rx="14" fill="#fff" />
+          <circle cx="62" cy="74" r="5" fill="#ff8a80" />
+          <circle cx="78" cy="74" r="5" fill="#ffd27a" />
+          <circle cx="94" cy="74" r="5" fill="#8fe3a8" />
+          <rect x="230" y="66" width="180" height="16" rx="8" fill="#e9eef3" />
+          <rect x="44" y="92" width="552" height="1" fill="#e9eef3" />
+          <rect x="164" y="92" width="1" height="260" fill="#e9eef3" />
+          <rect x="64" y="118" width="62" height="7" rx="3.5" fill="#12a67f" />
+          <rect x="64" y="144" width="48" height="7" rx="3.5" fill="#e9eef3" />
+          <rect x="64" y="170" width="56" height="7" rx="3.5" fill="#e9eef3" />
+          <rect x="64" y="196" width="44" height="7" rx="3.5" fill="#e9eef3" />
+          <rect x="64" y="222" width="52" height="7" rx="3.5" fill="#e9eef3" />
+          <rect x="186" y="96" width="126" height="56" rx="10" fill="#f6f8fa" />
+          <rect x="198" y="108" width="44" height="6" rx="3" fill="#e9eef3" />
+          <rect x="198" y="124" width="70" height="12" rx="4" fill="#12a67f" />
+          <rect x="326" y="96" width="126" height="56" rx="10" fill="#f6f8fa" />
+          <rect x="338" y="108" width="44" height="6" rx="3" fill="#e9eef3" />
+          <rect x="338" y="124" width="54" height="12" rx="4" fill="#182230" />
+          <rect x="466" y="96" width="126" height="56" rx="10" fill="#f6f8fa" />
+          <rect x="478" y="108" width="44" height="6" rx="3" fill="#e9eef3" />
+          <rect x="478" y="124" width="62" height="12" rx="4" fill="#182230" />
+          <rect
+            x="186"
+            y="164"
+            width="236"
+            height="172"
+            rx="10"
+            fill="#f6f8fa"
+          />
+          <rect
+            x="200"
+            y="178"
+            width="70"
+            height="7"
+            rx="3.5"
+            fill="#182230"
+            opacity=".75"
+          />
+          <path
+            d="M206 250 L236 236 L266 242 L296 214 L326 222 L356 196 L404 176"
+            fill="none"
+            stroke="#12a67f"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            opacity=".55"
+          />
+          <rect x="214" y="228" width="16" height="34" rx="4" fill="#bdeedd" />
+          <rect x="244" y="210" width="16" height="52" rx="4" fill="#bdeedd" />
+          <rect x="274" y="218" width="16" height="44" rx="4" fill="#bdeedd" />
+          <rect x="304" y="184" width="16" height="78" rx="4" fill="#12a67f" />
+          <rect x="334" y="202" width="16" height="60" rx="4" fill="#bdeedd" />
+          <rect x="364" y="192" width="16" height="70" rx="4" fill="#bdeedd" />
+          <rect x="394" y="158" width="16" height="104" rx="4" fill="#12a67f" />
+          <rect
+            x="436"
+            y="164"
+            width="162"
+            height="172"
+            rx="10"
+            fill="none"
+            stroke="#e9eef3"
+            stroke-width="1.5"
+          />
+          <circle cx="462" cy="178" r="11" fill="#ffd28a" />
+          <rect
+            x="482"
+            y="171"
+            width="58"
+            height="6"
+            rx="3"
+            fill="#182230"
+            opacity=".75"
+          />
+          <rect x="482" y="182" width="36" height="5" rx="2.5" fill="#e9eef3" />
+          <rect x="552" y="170" width="34" height="16" rx="8" fill="#bdeedd" />
+          <circle cx="462" cy="218" r="11" fill="#b9c4ff" />
+          <rect
+            x="482"
+            y="211"
+            width="58"
+            height="6"
+            rx="3"
+            fill="#182230"
+            opacity=".75"
+          />
+          <rect x="482" y="222" width="36" height="5" rx="2.5" fill="#e9eef3" />
+          <rect x="552" y="210" width="34" height="16" rx="8" fill="#bdeedd" />
+          <circle cx="462" cy="258" r="11" fill="#ffb4b4" />
+          <rect
+            x="482"
+            y="251"
+            width="58"
+            height="6"
+            rx="3"
+            fill="#182230"
+            opacity=".75"
+          />
+          <rect x="482" y="262" width="36" height="5" rx="2.5" fill="#e9eef3" />
+          <rect x="552" y="250" width="34" height="16" rx="8" fill="#bdeedd" />
+          <rect
+            x="450"
+            y="300"
+            width="134"
+            height="24"
+            rx="12"
+            fill="#12a67f"
+          />
+        </svg>
+      </div>
+      <div class="cs__grid">
         <div>
-          <p class="eyebrow reveal">Selected work</p>
-          <h2 class="h2 reveal">Products I’ve helped <span class="serif grad">ship.</span></h2>
+          <h3>Overview</h3>
+          <p>
+            Quickers Venture Builder Platform is a comprehensive ecosystem
+            designed to support startups, incubators and corporations in
+            building and scaling innovative business ventures.
+          </p>
+          <p>
+            It brings founders and vetted investors onto one platform, and backs
+            each venture with tools, resources and access to a network of
+            investors and mentors.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Two-sided marketplace</strong> — connects founders raising
+              capital with investors looking for early-stage ventures.
+            </li>
+            <li>
+              <strong>Online incubation</strong> — gives startups a structured
+              programme, resources and advisory support.
+            </li>
+            <li>
+              <strong>Digital onboarding</strong> — handles KYC and
+              documentation online instead of on paper.
+            </li>
+            <li>
+              <strong>Portfolio tracking</strong> — lets investors follow their
+              ventures and progress reports in one place.
+            </li>
+            <li>
+              <strong>Mentor &amp; investor network</strong> — gives every
+              venture access to people who can help it grow.
+            </li>
+          </ul>
         </div>
-        <p class="lede reveal">From venture platforms and AI-powered HR tools to fan apps and live-streaming social networks. Open any project for the full case study.</p>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Venture platform</dd>
+            </div>
+            <div>
+              <dt>Sector</dt>
+              <dd>Fintech / startups</dd>
+            </div>
+            <div>
+              <dt>Users</dt>
+              <dd>Founders, investors, incubators</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Focus areas</h3>
+          <ul class="chips">
+            <li class="chip">Marketplace</li>
+            <li class="chip">Onboarding &amp; KYC</li>
+            <li class="chip">Dashboards</li>
+            <li class="chip">Investor tools</li>
+          </ul>
+          <div class="cs__links">
+            <a
+              class="btn btn--sm"
+              href="https://quickers.vc"
+              target="_blank"
+              rel="noopener"
+              >Visit quickers.vc<svg class="icon icon--go" aria-hidden="true">
+                <use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </aside>
       </div>
-      <div class="work">
-        <article class="card reveal card--wide" id="quickers-venture" style="--hue:160;--i:0">
-          <div class="stage"><svg viewBox="24 32 592 350" role="img" aria-label="Illustration of the Quickers Venture investor dashboard"><rect x="50" y="62" width="552" height="300" rx="14" fill="#0b1020" opacity=".10"/><rect x="44" y="52" width="552" height="300" rx="14" fill="#fff"/><circle cx="62" cy="74" r="5" fill="#ff8a80"/><circle cx="78" cy="74" r="5" fill="#ffd27a"/><circle cx="94" cy="74" r="5" fill="#8fe3a8"/><rect x="230" y="66" width="180" height="16" rx="8" fill="#e9eef3"/><rect x="44" y="92" width="552" height="1" fill="#e9eef3"/><rect x="164" y="92" width="1" height="260" fill="#e9eef3"/><rect x="64" y="118" width="62" height="7" rx="3.5" fill="#12a67f"/><rect x="64" y="144" width="48" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="170" width="56" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="196" width="44" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="222" width="52" height="7" rx="3.5" fill="#e9eef3"/><rect x="186" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="198" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="198" y="124" width="70" height="12" rx="4" fill="#12a67f"/><rect x="326" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="338" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="338" y="124" width="54" height="12" rx="4" fill="#182230"/><rect x="466" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="478" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="478" y="124" width="62" height="12" rx="4" fill="#182230"/><rect x="186" y="164" width="236" height="172" rx="10" fill="#f6f8fa"/><rect x="200" y="178" width="70" height="7" rx="3.5" fill="#182230" opacity=".75"/><path d="M206 250 L236 236 L266 242 L296 214 L326 222 L356 196 L404 176" fill="none" stroke="#12a67f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><rect x="214" y="228" width="16" height="34" rx="4" fill="#bdeedd"/><rect x="244" y="210" width="16" height="52" rx="4" fill="#bdeedd"/><rect x="274" y="218" width="16" height="44" rx="4" fill="#bdeedd"/><rect x="304" y="184" width="16" height="78" rx="4" fill="#12a67f"/><rect x="334" y="202" width="16" height="60" rx="4" fill="#bdeedd"/><rect x="364" y="192" width="16" height="70" rx="4" fill="#bdeedd"/><rect x="394" y="158" width="16" height="104" rx="4" fill="#12a67f"/><rect x="436" y="164" width="162" height="172" rx="10" fill="none" stroke="#e9eef3" stroke-width="1.5"/><circle cx="462" cy="178" r="11" fill="#ffd28a"/><rect x="482" y="171" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="182" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="170" width="34" height="16" rx="8" fill="#bdeedd"/><circle cx="462" cy="218" r="11" fill="#b9c4ff"/><rect x="482" y="211" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="222" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="210" width="34" height="16" rx="8" fill="#bdeedd"/><circle cx="462" cy="258" r="11" fill="#ffb4b4"/><rect x="482" y="251" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="262" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="250" width="34" height="16" rx="8" fill="#bdeedd"/><rect x="450" y="300" width="134" height="24" rx="12" fill="#12a67f"/></svg></div>
-          <div class="card__body">
-            <p class="card__meta"><span>01</span><b>Fintech · Web platform</b></p>
-            <h3>Quickers Venture</h3>
-            <p class="card__sum">A venture-building ecosystem that helps startups, incubators and corporations build and scale new businesses — with the tools, resources, investors and mentors to do it.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Venture platform</li><li class="chip">Investor marketplace</li><li class="chip">Digital KYC</li><li class="chip">Portfolio tracking</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="quickers-venture" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <div class="card__links"><a class="iconbtn" href="https://quickers.vc" target="_blank" rel="noopener" aria-label="Quickers Venture: visit quickers.vc"><svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="skill-nova" style="--hue:262;--i:1">
-          <div class="stage"><svg viewBox="44 24 558 384" role="img" aria-label="Illustration of the Skill Nova app: growth plan, skills and AI career assistant"><rect x="70" y="92" width="200" height="124" rx="14" fill="#0b1020" opacity=".10"/><rect x="64" y="82" width="200" height="124" rx="14" fill="#fff"/><g transform="translate(64 82)"><rect x="18" y="18" width="62" height="7" rx="3.5" fill="#1a1c2b" opacity=".8"/><rect x="18" y="32" width="40" height="6" rx="3" fill="#eceef4"/><rect x="18" y="64" width="40" height="22" rx="8" fill="#e3f8ef"/><circle cx="30" cy="75" r="4" fill="#18b27f"/><rect x="84" y="84" width="12" height="20" rx="4" fill="#ddd6ff"/><rect x="106" y="74" width="12" height="30" rx="4" fill="#ddd6ff"/><rect x="128" y="80" width="12" height="24" rx="4" fill="#ddd6ff"/><rect x="150" y="66" width="12" height="38" rx="4" fill="#6d4df2"/><rect x="172" y="76" width="12" height="28" rx="4" fill="#ddd6ff"/></g><rect x="243" y="52" width="170" height="340" rx="28" fill="#0b1020" opacity=".14"/><rect x="235" y="40" width="170" height="340" rx="28" fill="#12141d"/><rect x="242" y="47" width="156" height="326" rx="22" fill="#fff"/><rect x="298.0" y="54" width="44" height="9" rx="4.5" fill="#12141d"/><g transform="translate(242 47)"><rect x="16" y="36" width="64" height="8" rx="4" fill="#1a1c2b"/><rect x="16" y="50" width="44" height="6" rx="3" fill="#eceef4"/><circle cx="134" cy="44" r="12" fill="#ddd6ff"/><rect x="12" y="70" width="132" height="126" rx="16" fill="#f6f5ff"/><circle cx="78" cy="128" r="38" fill="none" stroke="#ddd6ff" stroke-width="10"/><circle cx="78" cy="128" r="38" fill="none" stroke="#6d4df2" stroke-width="10" stroke-linecap="round" stroke-dasharray="172 239" transform="rotate(-90 78 128)"/><text x="78" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1c2b" font-family="inherit">72%</text><rect x="54" y="178" width="48" height="6" rx="3" fill="#ddd6ff"/><rect x="16" y="214" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="226" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="226" width="104" height="7" rx="3.5" fill="#6d4df2"/><rect x="16" y="244" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="256" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="256" width="78" height="7" rx="3.5" fill="#6d4df2"/><rect x="16" y="274" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="286" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="286" width="92" height="7" rx="3.5" fill="#6d4df2"/></g><rect x="390" y="206" width="198" height="132" rx="14" fill="#0b1020" opacity=".10"/><rect x="384" y="196" width="198" height="132" rx="14" fill="#fff"/><g transform="translate(384 196)"><rect x="20" y="16" width="26" height="26" rx="9" fill="#6d4df2"/><path d="M33 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fff"/><rect x="56" y="20" width="76" height="7" rx="3.5" fill="#1a1c2b" opacity=".8"/><rect x="56" y="33" width="50" height="6" rx="3" fill="#eceef4"/><rect x="20" y="54" width="158" height="30" rx="10" fill="#f6f5ff"/><rect x="32" y="62" width="112" height="5" rx="2.5" fill="#ddd6ff"/><rect x="32" y="72" width="78" height="5" rx="2.5" fill="#ddd6ff"/><rect x="60" y="92" width="118" height="24" rx="10" fill="#6d4df2"/><rect x="72" y="101" width="74" height="5" rx="2.5" fill="#fff" opacity=".85"/></g></svg></div>
-          <div class="card__body">
-            <p class="card__meta"><span>02</span><b>AI · HR tech</b></p>
-            <h3>Skill Nova</h3>
-            <p class="card__sum">One platform for HR operations, professional development and personal career planning — with an AI assistant to guide the next step.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">AI career assistant</li><li class="chip">HR operations</li><li class="chip">Growth plans</li><li class="chip">Upskilling</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="skill-nova" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="lucentum" style="--hue:218;--i:0">
-          <div class="stage"><svg viewBox="44 24 548 384" role="img" aria-label="Illustration of the Lucentum fan app: match day, tickets and club store"><g transform="translate(64 104) rotate(-5 102 56)"><path d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z" fill="#0b1020" opacity=".12" transform="translate(6 10)"/><path d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z" fill="#fff"/><rect x="22" y="22" width="44" height="16" rx="8" fill="#f5b83d"/><rect x="22" y="48" width="92" height="8" rx="4" fill="#141a2e" opacity=".85"/><rect x="22" y="64" width="60" height="6" rx="3" fill="#e9edf5"/><rect x="22" y="80" width="40" height="6" rx="3" fill="#e9edf5"/><path d="M134 12v88" stroke="#e9edf5" stroke-width="2" stroke-dasharray="4 5"/><rect x="150" y="34" width="2" height="44" fill="#141a2e"/><rect x="155" y="34" width="3" height="44" fill="#141a2e"/><rect x="160" y="34" width="1.5" height="44" fill="#141a2e"/><rect x="165" y="34" width="3" height="44" fill="#141a2e"/><rect x="170" y="34" width="2" height="44" fill="#141a2e"/><rect x="175" y="34" width="1.5" height="44" fill="#141a2e"/><rect x="180" y="34" width="3" height="44" fill="#141a2e"/><rect x="185" y="34" width="2" height="44" fill="#141a2e"/></g><rect x="243" y="52" width="170" height="340" rx="28" fill="#0b1020" opacity=".14"/><rect x="235" y="40" width="170" height="340" rx="28" fill="#12141d"/><rect x="242" y="47" width="156" height="326" rx="22" fill="#fff"/><rect x="298.0" y="54" width="44" height="9" rx="4.5" fill="#12141d"/><g transform="translate(242 47)"><rect x="16" y="36" width="58" height="8" rx="4" fill="#141a2e"/><circle cx="134" cy="42" r="11" fill="#e9edf5"/><rect x="12" y="62" width="132" height="96" rx="16" fill="#1f4fd8"/><rect x="52" y="74" width="52" height="6" rx="3" fill="#fff" opacity=".6"/><circle cx="44" cy="112" r="17" fill="#fff"/><path d="M44 101l9 5v11l-9 6-9-6v-11z" fill="#1f4fd8"/><circle cx="112" cy="112" r="17" fill="#fff"/><circle cx="112" cy="112" r="9" fill="#f5b83d"/><text x="78" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#fff" font-family="inherit">VS</text><rect x="50" y="138" width="56" height="12" rx="6" fill="#fff" opacity=".22"/><rect x="16" y="172" width="54" height="7" rx="3.5" fill="#141a2e" opacity=".75"/><rect x="12" y="190" width="64" height="72" rx="12" fill="#f4f6fb"/><rect x="24" y="202" width="40" height="30" rx="8" fill="#f5b83d" opacity=".85"/><rect x="22" y="242" width="34" height="5" rx="2.5" fill="#141a2e" opacity=".6"/><rect x="22" y="251" width="22" height="5" rx="2.5" fill="#e9edf5"/><rect x="80" y="190" width="64" height="72" rx="12" fill="#f4f6fb"/><rect x="92" y="202" width="40" height="30" rx="8" fill="#c9d6ff" opacity=".85"/><rect x="90" y="242" width="34" height="5" rx="2.5" fill="#141a2e" opacity=".6"/><rect x="90" y="251" width="22" height="5" rx="2.5" fill="#e9edf5"/><rect x="12" y="276" width="132" height="34" rx="17" fill="#141a2e"/><rect x="50" y="290" width="56" height="6" rx="3" fill="#fff" opacity=".85"/></g><rect x="402" y="246" width="176" height="76" rx="14" fill="#0b1020" opacity=".10"/><rect x="396" y="236" width="176" height="76" rx="14" fill="#fff"/><g transform="translate(396 236)"><rect x="16" y="16" width="44" height="44" rx="12" fill="#eef2ff"/><path d="M28 30h3l3 14h13l3-10H33" fill="none" stroke="#1f4fd8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="72" y="22" width="64" height="7" rx="3.5" fill="#141a2e" opacity=".8"/><rect x="72" y="36" width="40" height="6" rx="3" fill="#e9edf5"/><rect x="72" y="48" width="48" height="8" rx="4" fill="#1f4fd8"/></g></svg></div>
-          <div class="card__body">
-            <p class="card__meta"><span>03</span><b>Sports · Mobile app</b></p>
-            <h3>Lucentum</h3>
-            <p class="card__sum">A sports club app that puts match days, tickets, memberships and the club store in every fan&#x27;s pocket.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Ticketing</li><li class="chip">E-commerce</li><li class="chip">Payments</li><li class="chip">Push notifications</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="lucentum" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              
-            </div>
-          </div>
-        </article>
-        <article class="card reveal card--wide card--flip" id="tmidirect" style="--hue:28;--i:1">
-          <div class="stage"><img src="assets/img/tmidirect-720.webp" srcset="assets/img/tmidirect-720.webp 720w, assets/img/tmidirect-1440.webp 1440w" sizes="(max-width: 900px) 94vw, 640px" width="1440" height="998" alt="TMIDirect app screens" loading="lazy" decoding="async"></div>
-          <div class="card__body">
-            <p class="card__meta"><span>04</span><b>Social · Mobile app</b></p>
-            <h3>TMIDirect</h3>
-            <p class="card__sum">An Instagram-style social platform where people share posts, go live, and publish audio podcasts — powered by Firebase and Agora.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Flutter</li><li class="chip">Firebase</li><li class="chip">Agora</li><li class="chip">Provider</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="tmidirect" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <div class="card__links"><a class="iconbtn" href="https://github.com/aiman-khan/tmi_direct" target="_blank" rel="noopener" aria-label="TMIDirect: view code"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg></a></div>
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="b2b-connect" style="--hue:354;--i:0">
-          <div class="stage"><img src="assets/img/b2b-connect-720.webp" srcset="assets/img/b2b-connect-720.webp 720w, assets/img/b2b-connect-1440.webp 1440w" sizes="(max-width: 900px) 94vw, 560px" width="1440" height="992" alt="B2B Connect app screens" loading="lazy" decoding="async"></div>
-          <div class="card__body">
-            <p class="card__meta"><span>05</span><b>B2B · Mobile app</b></p>
-            <h3>B2B Connect</h3>
-            <p class="card__sum">A B2B marketplace for posting jobs, bidding and managing orders, with secure payments and live performance statistics.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Flutter</li><li class="chip">Stripe</li><li class="chip">Google Maps</li><li class="chip">REST APIs</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="b2b-connect" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <div class="card__links"><a class="iconbtn" href="https://github.com/aiman-khan/neeleez_b2b_app" target="_blank" rel="noopener" aria-label="B2B Connect: view code"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg></a></div>
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="pirata" style="--hue:206;--i:1">
-          <div class="stage"><img src="assets/img/pirata-720.webp" srcset="assets/img/pirata-720.webp 720w, assets/img/pirata-1440.webp 1440w" sizes="(max-width: 900px) 94vw, 560px" width="1440" height="987" alt="Pirata app screens" loading="lazy" decoding="async"></div>
-          <div class="card__body">
-            <p class="card__meta"><span>06</span><b>Maps · Mobile app</b></p>
-            <h3>Pirata</h3>
-            <p class="card__sum">A location-first app with real-time tracking, interactive maps and optimal scheduled routes across multiple store visits.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Flutter</li><li class="chip">Google Maps</li><li class="chip">Live tracking</li><li class="chip">REST APIs</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="pirata" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <div class="card__links"><a class="iconbtn" href="https://github.com/aiman-khan/pirata" target="_blank" rel="noopener" aria-label="Pirata: view code"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg></a></div>
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="breather" style="--hue:222;--i:0">
-          <div class="stage"><img src="assets/img/breather-720.webp" srcset="assets/img/breather-720.webp 720w, assets/img/breather-1440.webp 1440w" sizes="(max-width: 900px) 94vw, 560px" width="1438" height="790" alt="Breather app screens" loading="lazy" decoding="async"></div>
-          <div class="card__body">
-            <p class="card__meta"><span>07</span><b>Wellness · Mobile app</b></p>
-            <h3>Breather</h3>
-            <p class="card__sum">A mindfulness app with customisable breathing patterns, a session scheduler, reminders and a global leaderboard.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Flutter</li><li class="chip">Firebase</li><li class="chip">Google Sign-In</li><li class="chip">Notifications</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="breather" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              
-            </div>
-          </div>
-        </article>
-        <article class="card reveal" id="rigel" style="--hue:286;--i:1">
-          <div class="stage"><img src="assets/img/rigel-720.webp" srcset="assets/img/rigel-720.webp 720w, assets/img/rigel-1440.webp 1440w" sizes="(max-width: 900px) 94vw, 560px" width="1440" height="1351" alt="Rigel app screens" loading="lazy" decoding="async"></div>
-          <div class="card__body">
-            <p class="card__meta"><span>08</span><b>Blockchain · Final-year project</b></p>
-            <h3>Rigel</h3>
-            <p class="card__sum">An Upwork-style marketplace where project terms and payments are enforced by Ethereum smart contracts — with built-in conflict resolution.</p>
-            <ul class="chips" aria-label="Tags"><li class="chip">Flutter</li><li class="chip">Solidity</li><li class="chip">Ethereum</li><li class="chip">Firebase</li></ul>
-            <div class="card__foot">
-              <button class="card__open" type="button" data-open="rigel" aria-haspopup="dialog">Case study <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <div class="card__links"><a class="iconbtn" href="https://github.com/aiman-khan/blockchain-based-freelancing-platform" target="_blank" rel="noopener" aria-label="Rigel: view code"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg></a></div>
-            </div>
-          </div>
-        </article>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-skill-nova"
+      aria-labelledby="cs-skill-nova-t"
+      style="--hue: 262"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>AI · HR tech</b></p>
+        <h2 id="cs-skill-nova-t">
+          Skill Nova
+          <span class="serif">— AI-powered HR &amp; career growth</span>
+        </h2>
+        <p>
+          One platform for HR operations, professional development and personal
+          career planning — with an AI assistant to guide the next step.
+        </p>
+      </header>
+      <div class="stage">
+        <svg
+          viewBox="44 24 558 384"
+          role="img"
+          aria-label="Illustration of the Skill Nova app: growth plan, skills and AI career assistant"
+        >
+          <rect
+            x="70"
+            y="92"
+            width="200"
+            height="124"
+            rx="14"
+            fill="#0b1020"
+            opacity=".10"
+          />
+          <rect x="64" y="82" width="200" height="124" rx="14" fill="#fff" />
+          <g transform="translate(64 82)">
+            <rect
+              x="18"
+              y="18"
+              width="62"
+              height="7"
+              rx="3.5"
+              fill="#1a1c2b"
+              opacity=".8"
+            />
+            <rect x="18" y="32" width="40" height="6" rx="3" fill="#eceef4" />
+            <rect x="18" y="64" width="40" height="22" rx="8" fill="#e3f8ef" />
+            <circle cx="30" cy="75" r="4" fill="#18b27f" />
+            <rect x="84" y="84" width="12" height="20" rx="4" fill="#ddd6ff" />
+            <rect x="106" y="74" width="12" height="30" rx="4" fill="#ddd6ff" />
+            <rect x="128" y="80" width="12" height="24" rx="4" fill="#ddd6ff" />
+            <rect x="150" y="66" width="12" height="38" rx="4" fill="#6d4df2" />
+            <rect x="172" y="76" width="12" height="28" rx="4" fill="#ddd6ff" />
+          </g>
+          <rect
+            x="243"
+            y="52"
+            width="170"
+            height="340"
+            rx="28"
+            fill="#0b1020"
+            opacity=".14"
+          />
+          <rect
+            x="235"
+            y="40"
+            width="170"
+            height="340"
+            rx="28"
+            fill="#12141d"
+          />
+          <rect x="242" y="47" width="156" height="326" rx="22" fill="#fff" />
+          <rect
+            x="298.0"
+            y="54"
+            width="44"
+            height="9"
+            rx="4.5"
+            fill="#12141d"
+          />
+          <g transform="translate(242 47)">
+            <rect x="16" y="36" width="64" height="8" rx="4" fill="#1a1c2b" />
+            <rect x="16" y="50" width="44" height="6" rx="3" fill="#eceef4" />
+            <circle cx="134" cy="44" r="12" fill="#ddd6ff" />
+            <rect
+              x="12"
+              y="70"
+              width="132"
+              height="126"
+              rx="16"
+              fill="#f6f5ff"
+            />
+            <circle
+              cx="78"
+              cy="128"
+              r="38"
+              fill="none"
+              stroke="#ddd6ff"
+              stroke-width="10"
+            />
+            <circle
+              cx="78"
+              cy="128"
+              r="38"
+              fill="none"
+              stroke="#6d4df2"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-dasharray="172 239"
+              transform="rotate(-90 78 128)"
+            />
+            <text
+              x="78"
+              y="134"
+              text-anchor="middle"
+              font-size="18"
+              font-weight="700"
+              fill="#1a1c2b"
+              font-family="inherit"
+            >
+              72%
+            </text>
+            <rect x="54" y="178" width="48" height="6" rx="3" fill="#ddd6ff" />
+            <rect
+              x="16"
+              y="214"
+              width="50"
+              height="6"
+              rx="3"
+              fill="#1a1c2b"
+              opacity=".7"
+            />
+            <rect
+              x="16"
+              y="226"
+              width="124"
+              height="7"
+              rx="3.5"
+              fill="#eceef4"
+            />
+            <rect
+              x="16"
+              y="226"
+              width="104"
+              height="7"
+              rx="3.5"
+              fill="#6d4df2"
+            />
+            <rect
+              x="16"
+              y="244"
+              width="50"
+              height="6"
+              rx="3"
+              fill="#1a1c2b"
+              opacity=".7"
+            />
+            <rect
+              x="16"
+              y="256"
+              width="124"
+              height="7"
+              rx="3.5"
+              fill="#eceef4"
+            />
+            <rect
+              x="16"
+              y="256"
+              width="78"
+              height="7"
+              rx="3.5"
+              fill="#6d4df2"
+            />
+            <rect
+              x="16"
+              y="274"
+              width="50"
+              height="6"
+              rx="3"
+              fill="#1a1c2b"
+              opacity=".7"
+            />
+            <rect
+              x="16"
+              y="286"
+              width="124"
+              height="7"
+              rx="3.5"
+              fill="#eceef4"
+            />
+            <rect
+              x="16"
+              y="286"
+              width="92"
+              height="7"
+              rx="3.5"
+              fill="#6d4df2"
+            />
+          </g>
+          <rect
+            x="390"
+            y="206"
+            width="198"
+            height="132"
+            rx="14"
+            fill="#0b1020"
+            opacity=".10"
+          />
+          <rect x="384" y="196" width="198" height="132" rx="14" fill="#fff" />
+          <g transform="translate(384 196)">
+            <rect x="20" y="16" width="26" height="26" rx="9" fill="#6d4df2" />
+            <path d="M33 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fff" />
+            <rect
+              x="56"
+              y="20"
+              width="76"
+              height="7"
+              rx="3.5"
+              fill="#1a1c2b"
+              opacity=".8"
+            />
+            <rect x="56" y="33" width="50" height="6" rx="3" fill="#eceef4" />
+            <rect
+              x="20"
+              y="54"
+              width="158"
+              height="30"
+              rx="10"
+              fill="#f6f5ff"
+            />
+            <rect
+              x="32"
+              y="62"
+              width="112"
+              height="5"
+              rx="2.5"
+              fill="#ddd6ff"
+            />
+            <rect x="32" y="72" width="78" height="5" rx="2.5" fill="#ddd6ff" />
+            <rect
+              x="60"
+              y="92"
+              width="118"
+              height="24"
+              rx="10"
+              fill="#6d4df2"
+            />
+            <rect
+              x="72"
+              y="101"
+              width="74"
+              height="5"
+              rx="2.5"
+              fill="#fff"
+              opacity=".85"
+            />
+          </g>
+        </svg>
       </div>
-    </div>
-  </section>
-
-  <!-- ============================== ABOUT ============================== -->
-  <section class="section" id="about">
-    <div class="wrap about">
-      <div class="about__intro">
-        <p class="eyebrow reveal">About</p>
-        <h2 class="h2 reveal">Engineer first, <span class="serif grad">product-minded</span> always.</h2>
-        <div class="about__me reveal">
-          <img src="assets/img/aiman-160.webp" srcset="assets/img/aiman-160.webp 1x, assets/img/aiman-320.webp 2x" width="56" height="56" alt="Aiman Sartaj" loading="lazy" decoding="async">
-          <div><b>Aiman Sartaj</b><span>Senior Software Engineer</span></div>
-        </div>
-      </div>
-      <div>
-        <div class="about__text reveal">
-          <p>I’m a software engineer who specialises in <strong>Flutter</strong> and <strong>Laravel</strong> — I like owning a feature from the database to the last pixel on the screen.</p>
-          <p>Over the past 4+ years I’ve worked with remote teams and in hands-on roles, building <strong>mobile apps</strong> and <strong>websites</strong> that people use every day: marketplaces, ticketing and e-commerce flows, live maps, streaming, payments.</p>
-          <p>I’m always learning. I’ve built with <strong>blockchain</strong> and explored <strong>AR</strong>, and right now what excites me most is <strong>AI</strong> — and how it changes what a small team can build.</p>
-        </div>
-        <div class="caps"><div class="cap reveal" style="--i:0"><div class="cap__ico"><svg class="icon " aria-hidden="true"><use href="#i-phone"/></svg></div><h3>Mobile apps</h3><p>Cross-platform Flutter apps for iOS and Android, from the first screen to the store release.</p></div><div class="cap reveal" style="--i:1"><div class="cap__ico"><svg class="icon " aria-hidden="true"><use href="#i-server"/></svg></div><h3>Backends &amp; APIs</h3><p>Laravel services and REST APIs that the app can rely on — auth, data, payments.</p></div><div class="cap reveal" style="--i:0"><div class="cap__ico"><svg class="icon " aria-hidden="true"><use href="#i-layers"/></svg></div><h3>Product features</h3><p>The hard parts: payments, ticketing, live maps, streaming, push notifications.</p></div><div class="cap reveal" style="--i:1"><div class="cap__ico"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg></div><h3>AI &amp; emerging tech</h3><p>AI-assisted products and blockchain smart contracts, applied where they actually help.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================== SKILLS ============================== -->
-  <section class="section skills-sec" id="skills">
-    <div class="wrap">
-      <div class="section-head">
+      <div class="cs__grid">
         <div>
-          <p class="eyebrow reveal">Skills</p>
-          <h2 class="h2 reveal">The <span class="serif grad">toolbox.</span></h2>
+          <h3>Overview</h3>
+          <p>
+            Skill Nova is an AI-powered HR, professional-development and
+            career-growth platform. It brings employee HR operations,
+            professional growth and personal career planning into a single
+            product.
+          </p>
+          <p>
+            Day-to-day HR — attendance, leave, profiles, evaluations — sits
+            alongside the things that move a career forward: skills,
+            certifications, goals, growth plans and AI guidance.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>HR operations</strong> — attendance and time logging,
+              leave and vacation management, employee profiles and HR/admin
+              tools.
+            </li>
+            <li>
+              <strong>Career growth</strong> — career and growth plans, goals
+              and projects, performance evaluations and upskilling.
+            </li>
+            <li>
+              <strong>Professional profile</strong> — résumé management, skills
+              and certifications.
+            </li>
+            <li>
+              <strong>AI career assistance</strong> — personalised guidance on
+              what to learn and where to go next.
+            </li>
+            <li>
+              <strong>Connections &amp; life planning</strong> — social features
+              and long-term planning beyond the day job.
+            </li>
+          </ul>
         </div>
-        <p class="lede reveal">The technologies I reach for most, and the integrations I’ve shipped in production apps.</p>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>HR &amp; career platform</dd>
+            </div>
+            <div>
+              <dt>Sector</dt>
+              <dd>HR tech / AI</dd>
+            </div>
+            <div>
+              <dt>Users</dt>
+              <dd>Employees, managers, HR admins</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Focus areas</h3>
+          <ul class="chips">
+            <li class="chip">AI assistant</li>
+            <li class="chip">Attendance &amp; leave</li>
+            <li class="chip">Evaluations</li>
+            <li class="chip">Skills &amp; certifications</li>
+            <li class="chip">Admin</li>
+          </ul>
+        </aside>
       </div>
-      <div class="skills"><div class="skillrow reveal"><h3>Mobile</h3><ul class="chips"><li class=chip>Flutter</li><li class=chip>Dart</li><li class=chip>Android</li><li class=chip>Java</li><li class=chip>Provider</li></ul></div><div class="skillrow reveal"><h3>Web</h3><ul class="chips"><li class=chip>React</li><li class=chip>JavaScript</li><li class=chip>HTML &amp; CSS</li></ul></div><div class="skillrow reveal"><h3>Backend</h3><ul class="chips"><li class=chip>Laravel</li><li class=chip>RESTful APIs</li><li class=chip>Firebase</li></ul></div><div class="skillrow reveal"><h3>Integrations</h3><ul class="chips"><li class=chip>Stripe</li><li class=chip>Google Maps</li><li class=chip>Agora</li><li class=chip>Push notifications (FCM)</li><li class=chip>Google Sign-In</li></ul></div><div class="skillrow reveal"><h3>Blockchain</h3><ul class="chips"><li class=chip>Solidity</li><li class=chip>Ethereum</li><li class=chip>Smart contracts</li></ul></div><div class="skillrow reveal"><h3>Foundations</h3><ul class="chips"><li class=chip>Git</li><li class=chip>OOP</li><li class=chip>Data structures</li><li class=chip>SDLC</li></ul></div></div>
-    </div>
-  </section>
-
-  <!-- ============================== CONTACT ============================== -->
-  <section class="section contact" id="contact">
-    <div class="wrap">
-      <p class="eyebrow reveal">Contact</p>
-      <h2 class="reveal">Have an idea?<br>Let’s <span class="serif grad">build it.</span></h2>
-      <p class="lede reveal">I’m always happy to talk about new projects, product ideas and engineering roles. Email is the fastest way to reach me.</p>
-      <div class="reveal">
-        <div class="mail">
-          <span class="mail__addr">aiman.dev.s@gmail.com</span>
-          <button class="btn btn--ghost btn--sm mail__copy" type="button" data-copy="aiman.dev.s@gmail.com"><svg class="icon i-copy" aria-hidden="true"><use href="#i-copy"/></svg><svg class="icon i-check" aria-hidden="true"><use href="#i-check"/></svg><span>Copy</span></button>
-          <a class="btn btn--sm" href="mailto:aiman.dev.s@gmail.com?subject=Hello%20Aiman">Email me <svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-lucentum"
+      aria-labelledby="cs-lucentum-t"
+      style="--hue: 218"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Sports · Mobile app</b></p>
+        <h2 id="cs-lucentum-t">
+          Lucentum
+          <span class="serif">— Fan app for a Spanish sports club</span>
+        </h2>
+        <p>
+          A sports club app that puts match days, tickets, memberships and the
+          club store in every fan&#x27;s pocket.
+        </p>
+      </header>
+      <div class="stage">
+        <svg
+          viewBox="44 24 548 384"
+          role="img"
+          aria-label="Illustration of the Lucentum fan app: match day, tickets and club store"
+        >
+          <g transform="translate(64 104) rotate(-5 102 56)">
+            <path
+              d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z"
+              fill="#0b1020"
+              opacity=".12"
+              transform="translate(6 10)"
+            />
+            <path
+              d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z"
+              fill="#fff"
+            />
+            <rect x="22" y="22" width="44" height="16" rx="8" fill="#f5b83d" />
+            <rect
+              x="22"
+              y="48"
+              width="92"
+              height="8"
+              rx="4"
+              fill="#141a2e"
+              opacity=".85"
+            />
+            <rect x="22" y="64" width="60" height="6" rx="3" fill="#e9edf5" />
+            <rect x="22" y="80" width="40" height="6" rx="3" fill="#e9edf5" />
+            <path
+              d="M134 12v88"
+              stroke="#e9edf5"
+              stroke-width="2"
+              stroke-dasharray="4 5"
+            />
+            <rect x="150" y="34" width="2" height="44" fill="#141a2e" />
+            <rect x="155" y="34" width="3" height="44" fill="#141a2e" />
+            <rect x="160" y="34" width="1.5" height="44" fill="#141a2e" />
+            <rect x="165" y="34" width="3" height="44" fill="#141a2e" />
+            <rect x="170" y="34" width="2" height="44" fill="#141a2e" />
+            <rect x="175" y="34" width="1.5" height="44" fill="#141a2e" />
+            <rect x="180" y="34" width="3" height="44" fill="#141a2e" />
+            <rect x="185" y="34" width="2" height="44" fill="#141a2e" />
+          </g>
+          <rect
+            x="243"
+            y="52"
+            width="170"
+            height="340"
+            rx="28"
+            fill="#0b1020"
+            opacity=".14"
+          />
+          <rect
+            x="235"
+            y="40"
+            width="170"
+            height="340"
+            rx="28"
+            fill="#12141d"
+          />
+          <rect x="242" y="47" width="156" height="326" rx="22" fill="#fff" />
+          <rect
+            x="298.0"
+            y="54"
+            width="44"
+            height="9"
+            rx="4.5"
+            fill="#12141d"
+          />
+          <g transform="translate(242 47)">
+            <rect x="16" y="36" width="58" height="8" rx="4" fill="#141a2e" />
+            <circle cx="134" cy="42" r="11" fill="#e9edf5" />
+            <rect
+              x="12"
+              y="62"
+              width="132"
+              height="96"
+              rx="16"
+              fill="#1f4fd8"
+            />
+            <rect
+              x="52"
+              y="74"
+              width="52"
+              height="6"
+              rx="3"
+              fill="#fff"
+              opacity=".6"
+            />
+            <circle cx="44" cy="112" r="17" fill="#fff" />
+            <path d="M44 101l9 5v11l-9 6-9-6v-11z" fill="#1f4fd8" />
+            <circle cx="112" cy="112" r="17" fill="#fff" />
+            <circle cx="112" cy="112" r="9" fill="#f5b83d" />
+            <text
+              x="78"
+              y="118"
+              text-anchor="middle"
+              font-size="15"
+              font-weight="700"
+              fill="#fff"
+              font-family="inherit"
+            >
+              VS
+            </text>
+            <rect
+              x="50"
+              y="138"
+              width="56"
+              height="12"
+              rx="6"
+              fill="#fff"
+              opacity=".22"
+            />
+            <rect
+              x="16"
+              y="172"
+              width="54"
+              height="7"
+              rx="3.5"
+              fill="#141a2e"
+              opacity=".75"
+            />
+            <rect
+              x="12"
+              y="190"
+              width="64"
+              height="72"
+              rx="12"
+              fill="#f4f6fb"
+            />
+            <rect
+              x="24"
+              y="202"
+              width="40"
+              height="30"
+              rx="8"
+              fill="#f5b83d"
+              opacity=".85"
+            />
+            <rect
+              x="22"
+              y="242"
+              width="34"
+              height="5"
+              rx="2.5"
+              fill="#141a2e"
+              opacity=".6"
+            />
+            <rect
+              x="22"
+              y="251"
+              width="22"
+              height="5"
+              rx="2.5"
+              fill="#e9edf5"
+            />
+            <rect
+              x="80"
+              y="190"
+              width="64"
+              height="72"
+              rx="12"
+              fill="#f4f6fb"
+            />
+            <rect
+              x="92"
+              y="202"
+              width="40"
+              height="30"
+              rx="8"
+              fill="#c9d6ff"
+              opacity=".85"
+            />
+            <rect
+              x="90"
+              y="242"
+              width="34"
+              height="5"
+              rx="2.5"
+              fill="#141a2e"
+              opacity=".6"
+            />
+            <rect
+              x="90"
+              y="251"
+              width="22"
+              height="5"
+              rx="2.5"
+              fill="#e9edf5"
+            />
+            <rect
+              x="12"
+              y="276"
+              width="132"
+              height="34"
+              rx="17"
+              fill="#141a2e"
+            />
+            <rect
+              x="50"
+              y="290"
+              width="56"
+              height="6"
+              rx="3"
+              fill="#fff"
+              opacity=".85"
+            />
+          </g>
+          <rect
+            x="402"
+            y="246"
+            width="176"
+            height="76"
+            rx="14"
+            fill="#0b1020"
+            opacity=".10"
+          />
+          <rect x="396" y="236" width="176" height="76" rx="14" fill="#fff" />
+          <g transform="translate(396 236)">
+            <rect x="16" y="16" width="44" height="44" rx="12" fill="#eef2ff" />
+            <path
+              d="M28 30h3l3 14h13l3-10H33"
+              fill="none"
+              stroke="#1f4fd8"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <rect
+              x="72"
+              y="22"
+              width="64"
+              height="7"
+              rx="3.5"
+              fill="#141a2e"
+              opacity=".8"
+            />
+            <rect x="72" y="36" width="40" height="6" rx="3" fill="#e9edf5" />
+            <rect x="72" y="48" width="48" height="8" rx="4" fill="#1f4fd8" />
+          </g>
+        </svg>
+      </div>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Lucentum is a mobile app for a sports team in Spain. It combines
+            everything a supporter needs — events, matches and teams — with
+            ticketing and a full e-commerce and payment flow.
+          </p>
+          <p>
+            Under the hood it covers the whole journey: authentication and
+            onboarding, localisation, push notifications, user profiles, and a
+            store with cart, checkout, orders and memberships.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Authentication &amp; onboarding</strong> — login, token
+              persistence, splash-screen routing, onboarding flow and
+              localisation.
+            </li>
+            <li>
+              <strong>Sports &amp; events</strong> — events, matches, teams and
+              tickets.
+            </li>
+            <li>
+              <strong>Club store</strong> — products, cart, wishlist,
+              recommendations, orders, checkout and payments.
+            </li>
+            <li>
+              <strong>Memberships</strong> — sold and managed in the same
+              payment flow as the store.
+            </li>
+            <li>
+              <strong>Profiles</strong> — user information, avatar, bio and
+              contact details that can be edited in-app.
+            </li>
+            <li>
+              <strong>Push notifications</strong> — Firebase Cloud Messaging
+              wired in from first launch.
+            </li>
+          </ul>
         </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app</dd>
+            </div>
+            <div>
+              <dt>Sector</dt>
+              <dd>Sports / fan engagement</dd>
+            </div>
+            <div>
+              <dt>Users</dt>
+              <dd>Club supporters</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Focus areas</h3>
+          <ul class="chips">
+            <li class="chip">Auth &amp; onboarding</li>
+            <li class="chip">Ticketing</li>
+            <li class="chip">E-commerce</li>
+            <li class="chip">Payments</li>
+            <li class="chip">FCM</li>
+            <li class="chip">Localisation</li>
+          </ul>
+        </aside>
       </div>
-      <div class="socials reveal"><a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/aiman-s-khan/" target="_blank" rel="noopener me"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a><a class="btn btn--ghost btn--sm" href="https://github.com/aiman-khan" target="_blank" rel="noopener me"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg>GitHub</a><a class="btn btn--ghost btn--sm" href="https://medium.com/@aiman.dev" target="_blank" rel="noopener me"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-medium"/></svg>Medium</a></div>
-    </div>
-  </section>
-</main>
-
-<footer class="foot">
-  <div class="wrap foot__in">
-    <span>© <span data-year>2026</span> Aiman Sartaj. Designed &amp; built with care.</span>
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-
-  <dialog class="cs" id="cs-quickers-venture" aria-labelledby="cs-quickers-venture-t" style="--hue:160">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Fintech · Web platform</b></p>
-      <h2 id="cs-quickers-venture-t">Quickers Venture <span class="serif">— Venture builder platform</span></h2>
-      <p>A venture-building ecosystem that helps startups, incubators and corporations build and scale new businesses — with the tools, resources, investors and mentors to do it.</p>
-    </header>
-    <div class="stage"><svg viewBox="24 32 592 350" role="img" aria-label="Illustration of the Quickers Venture investor dashboard"><rect x="50" y="62" width="552" height="300" rx="14" fill="#0b1020" opacity=".10"/><rect x="44" y="52" width="552" height="300" rx="14" fill="#fff"/><circle cx="62" cy="74" r="5" fill="#ff8a80"/><circle cx="78" cy="74" r="5" fill="#ffd27a"/><circle cx="94" cy="74" r="5" fill="#8fe3a8"/><rect x="230" y="66" width="180" height="16" rx="8" fill="#e9eef3"/><rect x="44" y="92" width="552" height="1" fill="#e9eef3"/><rect x="164" y="92" width="1" height="260" fill="#e9eef3"/><rect x="64" y="118" width="62" height="7" rx="3.5" fill="#12a67f"/><rect x="64" y="144" width="48" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="170" width="56" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="196" width="44" height="7" rx="3.5" fill="#e9eef3"/><rect x="64" y="222" width="52" height="7" rx="3.5" fill="#e9eef3"/><rect x="186" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="198" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="198" y="124" width="70" height="12" rx="4" fill="#12a67f"/><rect x="326" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="338" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="338" y="124" width="54" height="12" rx="4" fill="#182230"/><rect x="466" y="96" width="126" height="56" rx="10" fill="#f6f8fa"/><rect x="478" y="108" width="44" height="6" rx="3" fill="#e9eef3"/><rect x="478" y="124" width="62" height="12" rx="4" fill="#182230"/><rect x="186" y="164" width="236" height="172" rx="10" fill="#f6f8fa"/><rect x="200" y="178" width="70" height="7" rx="3.5" fill="#182230" opacity=".75"/><path d="M206 250 L236 236 L266 242 L296 214 L326 222 L356 196 L404 176" fill="none" stroke="#12a67f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><rect x="214" y="228" width="16" height="34" rx="4" fill="#bdeedd"/><rect x="244" y="210" width="16" height="52" rx="4" fill="#bdeedd"/><rect x="274" y="218" width="16" height="44" rx="4" fill="#bdeedd"/><rect x="304" y="184" width="16" height="78" rx="4" fill="#12a67f"/><rect x="334" y="202" width="16" height="60" rx="4" fill="#bdeedd"/><rect x="364" y="192" width="16" height="70" rx="4" fill="#bdeedd"/><rect x="394" y="158" width="16" height="104" rx="4" fill="#12a67f"/><rect x="436" y="164" width="162" height="172" rx="10" fill="none" stroke="#e9eef3" stroke-width="1.5"/><circle cx="462" cy="178" r="11" fill="#ffd28a"/><rect x="482" y="171" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="182" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="170" width="34" height="16" rx="8" fill="#bdeedd"/><circle cx="462" cy="218" r="11" fill="#b9c4ff"/><rect x="482" y="211" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="222" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="210" width="34" height="16" rx="8" fill="#bdeedd"/><circle cx="462" cy="258" r="11" fill="#ffb4b4"/><rect x="482" y="251" width="58" height="6" rx="3" fill="#182230" opacity=".75"/><rect x="482" y="262" width="36" height="5" rx="2.5" fill="#e9eef3"/><rect x="552" y="250" width="34" height="16" rx="8" fill="#bdeedd"/><rect x="450" y="300" width="134" height="24" rx="12" fill="#12a67f"/></svg></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Quickers Venture Builder Platform is a comprehensive ecosystem designed to support startups, incubators and corporations in building and scaling innovative business ventures.</p><p>It brings founders and vetted investors onto one platform, and backs each venture with tools, resources and access to a network of investors and mentors.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Two-sided marketplace</strong> — connects founders raising capital with investors looking for early-stage ventures.</li><li><strong>Online incubation</strong> — gives startups a structured programme, resources and advisory support.</li><li><strong>Digital onboarding</strong> — handles KYC and documentation online instead of on paper.</li><li><strong>Portfolio tracking</strong> — lets investors follow their ventures and progress reports in one place.</li><li><strong>Mentor &amp; investor network</strong> — gives every venture access to people who can help it grow.</li></ul>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-tmidirect"
+      aria-labelledby="cs-tmidirect-t"
+      style="--hue: 28"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Social · Mobile app</b></p>
+        <h2 id="cs-tmidirect-t">
+          TMIDirect <span class="serif">— Social media platform</span>
+        </h2>
+        <p>
+          An Instagram-style social platform where people share posts, go live,
+          and publish audio podcasts — powered by Firebase and Agora.
+        </p>
+      </header>
+      <div class="stage">
+        <img
+          src="assets/img/tmidirect-720.webp"
+          srcset="
+            assets/img/tmidirect-720.webp   720w,
+            assets/img/tmidirect-1440.webp 1440w
+          "
+          sizes="(max-width: 940px) 94vw, 880px"
+          width="1440"
+          height="998"
+          alt="TMIDirect app screens"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Venture platform</dd></div><div><dt>Sector</dt><dd>Fintech / startups</dd></div><div><dt>Users</dt><dd>Founders, investors, incubators</dd></div></dl>
-        <h3 style="margin-top:32px">Focus areas</h3>
-        <ul class="chips"><li class="chip">Marketplace</li><li class="chip">Onboarding &amp; KYC</li><li class="chip">Dashboards</li><li class="chip">Investor tools</li></ul>
-        <div class="cs__links"><a class="btn btn--sm" href="https://quickers.vc" target="_blank" rel="noopener">Visit quickers.vc<svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-skill-nova" aria-labelledby="cs-skill-nova-t" style="--hue:262">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>AI · HR tech</b></p>
-      <h2 id="cs-skill-nova-t">Skill Nova <span class="serif">— AI-powered HR &amp; career growth</span></h2>
-      <p>One platform for HR operations, professional development and personal career planning — with an AI assistant to guide the next step.</p>
-    </header>
-    <div class="stage"><svg viewBox="44 24 558 384" role="img" aria-label="Illustration of the Skill Nova app: growth plan, skills and AI career assistant"><rect x="70" y="92" width="200" height="124" rx="14" fill="#0b1020" opacity=".10"/><rect x="64" y="82" width="200" height="124" rx="14" fill="#fff"/><g transform="translate(64 82)"><rect x="18" y="18" width="62" height="7" rx="3.5" fill="#1a1c2b" opacity=".8"/><rect x="18" y="32" width="40" height="6" rx="3" fill="#eceef4"/><rect x="18" y="64" width="40" height="22" rx="8" fill="#e3f8ef"/><circle cx="30" cy="75" r="4" fill="#18b27f"/><rect x="84" y="84" width="12" height="20" rx="4" fill="#ddd6ff"/><rect x="106" y="74" width="12" height="30" rx="4" fill="#ddd6ff"/><rect x="128" y="80" width="12" height="24" rx="4" fill="#ddd6ff"/><rect x="150" y="66" width="12" height="38" rx="4" fill="#6d4df2"/><rect x="172" y="76" width="12" height="28" rx="4" fill="#ddd6ff"/></g><rect x="243" y="52" width="170" height="340" rx="28" fill="#0b1020" opacity=".14"/><rect x="235" y="40" width="170" height="340" rx="28" fill="#12141d"/><rect x="242" y="47" width="156" height="326" rx="22" fill="#fff"/><rect x="298.0" y="54" width="44" height="9" rx="4.5" fill="#12141d"/><g transform="translate(242 47)"><rect x="16" y="36" width="64" height="8" rx="4" fill="#1a1c2b"/><rect x="16" y="50" width="44" height="6" rx="3" fill="#eceef4"/><circle cx="134" cy="44" r="12" fill="#ddd6ff"/><rect x="12" y="70" width="132" height="126" rx="16" fill="#f6f5ff"/><circle cx="78" cy="128" r="38" fill="none" stroke="#ddd6ff" stroke-width="10"/><circle cx="78" cy="128" r="38" fill="none" stroke="#6d4df2" stroke-width="10" stroke-linecap="round" stroke-dasharray="172 239" transform="rotate(-90 78 128)"/><text x="78" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1c2b" font-family="inherit">72%</text><rect x="54" y="178" width="48" height="6" rx="3" fill="#ddd6ff"/><rect x="16" y="214" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="226" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="226" width="104" height="7" rx="3.5" fill="#6d4df2"/><rect x="16" y="244" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="256" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="256" width="78" height="7" rx="3.5" fill="#6d4df2"/><rect x="16" y="274" width="50" height="6" rx="3" fill="#1a1c2b" opacity=".7"/><rect x="16" y="286" width="124" height="7" rx="3.5" fill="#eceef4"/><rect x="16" y="286" width="92" height="7" rx="3.5" fill="#6d4df2"/></g><rect x="390" y="206" width="198" height="132" rx="14" fill="#0b1020" opacity=".10"/><rect x="384" y="196" width="198" height="132" rx="14" fill="#fff"/><g transform="translate(384 196)"><rect x="20" y="16" width="26" height="26" rx="9" fill="#6d4df2"/><path d="M33 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fff"/><rect x="56" y="20" width="76" height="7" rx="3.5" fill="#1a1c2b" opacity=".8"/><rect x="56" y="33" width="50" height="6" rx="3" fill="#eceef4"/><rect x="20" y="54" width="158" height="30" rx="10" fill="#f6f5ff"/><rect x="32" y="62" width="112" height="5" rx="2.5" fill="#ddd6ff"/><rect x="32" y="72" width="78" height="5" rx="2.5" fill="#ddd6ff"/><rect x="60" y="92" width="118" height="24" rx="10" fill="#6d4df2"/><rect x="72" y="101" width="74" height="5" rx="2.5" fill="#fff" opacity=".85"/></g></svg></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Skill Nova is an AI-powered HR, professional-development and career-growth platform. It brings employee HR operations, professional growth and personal career planning into a single product.</p><p>Day-to-day HR — attendance, leave, profiles, evaluations — sits alongside the things that move a career forward: skills, certifications, goals, growth plans and AI guidance.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>HR operations</strong> — attendance and time logging, leave and vacation management, employee profiles and HR/admin tools.</li><li><strong>Career growth</strong> — career and growth plans, goals and projects, performance evaluations and upskilling.</li><li><strong>Professional profile</strong> — résumé management, skills and certifications.</li><li><strong>AI career assistance</strong> — personalised guidance on what to learn and where to go next.</li><li><strong>Connections &amp; life planning</strong> — social features and long-term planning beyond the day job.</li></ul>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            TMIDirect is a social media platform built around multimedia. Users
+            share photo, video and audio posts, broadcast live to their
+            followers, and publish podcasts — all in one feed.
+          </p>
+          <p>
+            Firebase handles authentication, storage and real-time updates,
+            while Agora powers low-latency live streaming.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Multimedia sharing</strong> — image, video and audio posts
+              in a single feed.
+            </li>
+            <li>
+              <strong>Live streaming</strong> — real-time broadcasts with
+              instant audience interaction, built on Agora.
+            </li>
+            <li>
+              <strong>Audio podcasts</strong> — create, publish and listen to
+              long-form audio.
+            </li>
+            <li>
+              <strong>Firebase backend</strong> — secure storage and real-time
+              updates keep the feed responsive.
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Android &amp; iOS</dd>
+            </div>
+            <div>
+              <dt>State management</dt>
+              <dd>Provider</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Built with</h3>
+          <ul class="chips">
+            <li class="chip">Flutter</li>
+            <li class="chip">Firebase</li>
+            <li class="chip">Agora</li>
+            <li class="chip">Provider</li>
+            <li class="chip">Git</li>
+          </ul>
+          <div class="cs__links">
+            <a
+              class="btn btn--sm"
+              href="https://github.com/aiman-khan/tmi_direct"
+              target="_blank"
+              rel="noopener"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-github" /></svg
+              >View code</a
+            >
+          </div>
+        </aside>
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>HR &amp; career platform</dd></div><div><dt>Sector</dt><dd>HR tech / AI</dd></div><div><dt>Users</dt><dd>Employees, managers, HR admins</dd></div></dl>
-        <h3 style="margin-top:32px">Focus areas</h3>
-        <ul class="chips"><li class="chip">AI assistant</li><li class="chip">Attendance &amp; leave</li><li class="chip">Evaluations</li><li class="chip">Skills &amp; certifications</li><li class="chip">Admin</li></ul>
-        
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-lucentum" aria-labelledby="cs-lucentum-t" style="--hue:218">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Sports · Mobile app</b></p>
-      <h2 id="cs-lucentum-t">Lucentum <span class="serif">— Fan app for a Spanish sports club</span></h2>
-      <p>A sports club app that puts match days, tickets, memberships and the club store in every fan&#x27;s pocket.</p>
-    </header>
-    <div class="stage"><svg viewBox="44 24 548 384" role="img" aria-label="Illustration of the Lucentum fan app: match day, tickets and club store"><g transform="translate(64 104) rotate(-5 102 56)"><path d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z" fill="#0b1020" opacity=".12" transform="translate(6 10)"/><path d="M0 14a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v28a12 12 0 0 0 0 24v28a14 14 0 0 1-14 14H14a14 14 0 0 1-14-14V66a12 12 0 0 0 0-24z" fill="#fff"/><rect x="22" y="22" width="44" height="16" rx="8" fill="#f5b83d"/><rect x="22" y="48" width="92" height="8" rx="4" fill="#141a2e" opacity=".85"/><rect x="22" y="64" width="60" height="6" rx="3" fill="#e9edf5"/><rect x="22" y="80" width="40" height="6" rx="3" fill="#e9edf5"/><path d="M134 12v88" stroke="#e9edf5" stroke-width="2" stroke-dasharray="4 5"/><rect x="150" y="34" width="2" height="44" fill="#141a2e"/><rect x="155" y="34" width="3" height="44" fill="#141a2e"/><rect x="160" y="34" width="1.5" height="44" fill="#141a2e"/><rect x="165" y="34" width="3" height="44" fill="#141a2e"/><rect x="170" y="34" width="2" height="44" fill="#141a2e"/><rect x="175" y="34" width="1.5" height="44" fill="#141a2e"/><rect x="180" y="34" width="3" height="44" fill="#141a2e"/><rect x="185" y="34" width="2" height="44" fill="#141a2e"/></g><rect x="243" y="52" width="170" height="340" rx="28" fill="#0b1020" opacity=".14"/><rect x="235" y="40" width="170" height="340" rx="28" fill="#12141d"/><rect x="242" y="47" width="156" height="326" rx="22" fill="#fff"/><rect x="298.0" y="54" width="44" height="9" rx="4.5" fill="#12141d"/><g transform="translate(242 47)"><rect x="16" y="36" width="58" height="8" rx="4" fill="#141a2e"/><circle cx="134" cy="42" r="11" fill="#e9edf5"/><rect x="12" y="62" width="132" height="96" rx="16" fill="#1f4fd8"/><rect x="52" y="74" width="52" height="6" rx="3" fill="#fff" opacity=".6"/><circle cx="44" cy="112" r="17" fill="#fff"/><path d="M44 101l9 5v11l-9 6-9-6v-11z" fill="#1f4fd8"/><circle cx="112" cy="112" r="17" fill="#fff"/><circle cx="112" cy="112" r="9" fill="#f5b83d"/><text x="78" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#fff" font-family="inherit">VS</text><rect x="50" y="138" width="56" height="12" rx="6" fill="#fff" opacity=".22"/><rect x="16" y="172" width="54" height="7" rx="3.5" fill="#141a2e" opacity=".75"/><rect x="12" y="190" width="64" height="72" rx="12" fill="#f4f6fb"/><rect x="24" y="202" width="40" height="30" rx="8" fill="#f5b83d" opacity=".85"/><rect x="22" y="242" width="34" height="5" rx="2.5" fill="#141a2e" opacity=".6"/><rect x="22" y="251" width="22" height="5" rx="2.5" fill="#e9edf5"/><rect x="80" y="190" width="64" height="72" rx="12" fill="#f4f6fb"/><rect x="92" y="202" width="40" height="30" rx="8" fill="#c9d6ff" opacity=".85"/><rect x="90" y="242" width="34" height="5" rx="2.5" fill="#141a2e" opacity=".6"/><rect x="90" y="251" width="22" height="5" rx="2.5" fill="#e9edf5"/><rect x="12" y="276" width="132" height="34" rx="17" fill="#141a2e"/><rect x="50" y="290" width="56" height="6" rx="3" fill="#fff" opacity=".85"/></g><rect x="402" y="246" width="176" height="76" rx="14" fill="#0b1020" opacity=".10"/><rect x="396" y="236" width="176" height="76" rx="14" fill="#fff"/><g transform="translate(396 236)"><rect x="16" y="16" width="44" height="44" rx="12" fill="#eef2ff"/><path d="M28 30h3l3 14h13l3-10H33" fill="none" stroke="#1f4fd8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="72" y="22" width="64" height="7" rx="3.5" fill="#141a2e" opacity=".8"/><rect x="72" y="36" width="40" height="6" rx="3" fill="#e9edf5"/><rect x="72" y="48" width="48" height="8" rx="4" fill="#1f4fd8"/></g></svg></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Lucentum is a mobile app for a sports team in Spain. It combines everything a supporter needs — events, matches and teams — with ticketing and a full e-commerce and payment flow.</p><p>Under the hood it covers the whole journey: authentication and onboarding, localisation, push notifications, user profiles, and a store with cart, checkout, orders and memberships.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Authentication &amp; onboarding</strong> — login, token persistence, splash-screen routing, onboarding flow and localisation.</li><li><strong>Sports &amp; events</strong> — events, matches, teams and tickets.</li><li><strong>Club store</strong> — products, cart, wishlist, recommendations, orders, checkout and payments.</li><li><strong>Memberships</strong> — sold and managed in the same payment flow as the store.</li><li><strong>Profiles</strong> — user information, avatar, bio and contact details that can be edited in-app.</li><li><strong>Push notifications</strong> — Firebase Cloud Messaging wired in from first launch.</li></ul>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-b2b-connect"
+      aria-labelledby="cs-b2b-connect-t"
+      style="--hue: 354"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>B2B · Mobile app</b></p>
+        <h2 id="cs-b2b-connect-t">
+          B2B Connect
+          <span class="serif"
+            >— Jobs, bidding &amp; payments for businesses</span
+          >
+        </h2>
+        <p>
+          A B2B marketplace for posting jobs, bidding and managing orders, with
+          secure payments and live performance statistics.
+        </p>
+      </header>
+      <div class="stage">
+        <img
+          src="assets/img/b2b-connect-720.webp"
+          srcset="
+            assets/img/b2b-connect-720.webp   720w,
+            assets/img/b2b-connect-1440.webp 1440w
+          "
+          sizes="(max-width: 940px) 94vw, 880px"
+          width="1440"
+          height="992"
+          alt="B2B Connect app screens"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app</dd></div><div><dt>Sector</dt><dd>Sports / fan engagement</dd></div><div><dt>Users</dt><dd>Club supporters</dd></div></dl>
-        <h3 style="margin-top:32px">Focus areas</h3>
-        <ul class="chips"><li class="chip">Auth &amp; onboarding</li><li class="chip">Ticketing</li><li class="chip">E-commerce</li><li class="chip">Payments</li><li class="chip">FCM</li><li class="chip">Localisation</li></ul>
-        
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-tmidirect" aria-labelledby="cs-tmidirect-t" style="--hue:28">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Social · Mobile app</b></p>
-      <h2 id="cs-tmidirect-t">TMIDirect <span class="serif">— Social media platform</span></h2>
-      <p>An Instagram-style social platform where people share posts, go live, and publish audio podcasts — powered by Firebase and Agora.</p>
-    </header>
-    <div class="stage"><img src="assets/img/tmidirect-720.webp" srcset="assets/img/tmidirect-720.webp 720w, assets/img/tmidirect-1440.webp 1440w" sizes="(max-width: 940px) 94vw, 880px" width="1440" height="998" alt="TMIDirect app screens" loading="lazy" decoding="async"></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>TMIDirect is a social media platform built around multimedia. Users share photo, video and audio posts, broadcast live to their followers, and publish podcasts — all in one feed.</p><p>Firebase handles authentication, storage and real-time updates, while Agora powers low-latency live streaming.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Multimedia sharing</strong> — image, video and audio posts in a single feed.</li><li><strong>Live streaming</strong> — real-time broadcasts with instant audience interaction, built on Agora.</li><li><strong>Audio podcasts</strong> — create, publish and listen to long-form audio.</li><li><strong>Firebase backend</strong> — secure storage and real-time updates keep the feed responsive.</li></ul>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            B2B Connect streamlines how businesses work together. Companies post
+            jobs, receive bids, manage orders phase by phase, and pay securely —
+            in one unified app.
+          </p>
+          <p>
+            A data-heavy UI — points, wallets, charts and multi-phase project
+            timelines — sits on top of a set of integrated REST APIs.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Job posting &amp; bidding</strong> — businesses source
+              work and compare offers in one flow.
+            </li>
+            <li>
+              <strong>Order management</strong> — multi-phase projects with a
+              clear timeline for every delivery.
+            </li>
+            <li>
+              <strong>Secure payments</strong> — Stripe-powered transactions and
+              an in-app wallet.
+            </li>
+            <li>
+              <strong>Statistics</strong> — charts and graphs for points and
+              performance over time.
+            </li>
+            <li>
+              <strong>Maps</strong> — Google Maps for location-aware jobs.
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Android &amp; iOS</dd>
+            </div>
+            <div>
+              <dt>Payments</dt>
+              <dd>Stripe</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Built with</h3>
+          <ul class="chips">
+            <li class="chip">Flutter</li>
+            <li class="chip">Stripe</li>
+            <li class="chip">Google Maps</li>
+            <li class="chip">Charts</li>
+            <li class="chip">REST APIs</li>
+            <li class="chip">Git</li>
+          </ul>
+          <div class="cs__links">
+            <a
+              class="btn btn--sm"
+              href="https://github.com/aiman-khan/neeleez_b2b_app"
+              target="_blank"
+              rel="noopener"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-github" /></svg
+              >View code</a
+            >
+          </div>
+        </aside>
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app</dd></div><div><dt>Platform</dt><dd>Android &amp; iOS</dd></div><div><dt>State management</dt><dd>Provider</dd></div></dl>
-        <h3 style="margin-top:32px">Built with</h3>
-        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Firebase</li><li class="chip">Agora</li><li class="chip">Provider</li><li class="chip">Git</li></ul>
-        <div class="cs__links"><a class="btn btn--sm" href="https://github.com/aiman-khan/tmi_direct" target="_blank" rel="noopener"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg>View code</a></div>
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-b2b-connect" aria-labelledby="cs-b2b-connect-t" style="--hue:354">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>B2B · Mobile app</b></p>
-      <h2 id="cs-b2b-connect-t">B2B Connect <span class="serif">— Jobs, bidding &amp; payments for businesses</span></h2>
-      <p>A B2B marketplace for posting jobs, bidding and managing orders, with secure payments and live performance statistics.</p>
-    </header>
-    <div class="stage"><img src="assets/img/b2b-connect-720.webp" srcset="assets/img/b2b-connect-720.webp 720w, assets/img/b2b-connect-1440.webp 1440w" sizes="(max-width: 940px) 94vw, 880px" width="1440" height="992" alt="B2B Connect app screens" loading="lazy" decoding="async"></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>B2B Connect streamlines how businesses work together. Companies post jobs, receive bids, manage orders phase by phase, and pay securely — in one unified app.</p><p>A data-heavy UI — points, wallets, charts and multi-phase project timelines — sits on top of a set of integrated REST APIs.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Job posting &amp; bidding</strong> — businesses source work and compare offers in one flow.</li><li><strong>Order management</strong> — multi-phase projects with a clear timeline for every delivery.</li><li><strong>Secure payments</strong> — Stripe-powered transactions and an in-app wallet.</li><li><strong>Statistics</strong> — charts and graphs for points and performance over time.</li><li><strong>Maps</strong> — Google Maps for location-aware jobs.</li></ul>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-pirata"
+      aria-labelledby="cs-pirata-t"
+      style="--hue: 206"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Maps · Mobile app</b></p>
+        <h2 id="cs-pirata-t">
+          Pirata
+          <span class="serif"
+            >— Live location tracking &amp; route guidance</span
+          >
+        </h2>
+        <p>
+          A location-first app with real-time tracking, interactive maps and
+          optimal scheduled routes across multiple store visits.
+        </p>
+      </header>
+      <div class="stage">
+        <img
+          src="assets/img/pirata-720.webp"
+          srcset="
+            assets/img/pirata-720.webp   720w,
+            assets/img/pirata-1440.webp 1440w
+          "
+          sizes="(max-width: 940px) 94vw, 880px"
+          width="1440"
+          height="987"
+          alt="Pirata app screens"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app</dd></div><div><dt>Platform</dt><dd>Android &amp; iOS</dd></div><div><dt>Payments</dt><dd>Stripe</dd></div></dl>
-        <h3 style="margin-top:32px">Built with</h3>
-        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Stripe</li><li class="chip">Google Maps</li><li class="chip">Charts</li><li class="chip">REST APIs</li><li class="chip">Git</li></ul>
-        <div class="cs__links"><a class="btn btn--sm" href="https://github.com/aiman-khan/neeleez_b2b_app" target="_blank" rel="noopener"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg>View code</a></div>
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-pirata" aria-labelledby="cs-pirata-t" style="--hue:206">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Maps · Mobile app</b></p>
-      <h2 id="cs-pirata-t">Pirata <span class="serif">— Live location tracking &amp; route guidance</span></h2>
-      <p>A location-first app with real-time tracking, interactive maps and optimal scheduled routes across multiple store visits.</p>
-    </header>
-    <div class="stage"><img src="assets/img/pirata-720.webp" srcset="assets/img/pirata-720.webp 720w, assets/img/pirata-1440.webp 1440w" sizes="(max-width: 940px) 94vw, 880px" width="1440" height="987" alt="Pirata app screens" loading="lazy" decoding="async"></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Pirata is built around the map. It tracks the user&#x27;s position in real time, plans the optimal route across a day of scheduled stops, and guides them from one to the next.</p><p>Dynamic markers surface nearby stores and points of interest, and each visit opens into a step-by-step task flow.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Real-time location tracking</strong> — the user&#x27;s position stays accurate while walking or driving.</li><li><strong>Optimal scheduled routes</strong> — a day of visits ordered into the most efficient path, with time and distance.</li><li><strong>Live route guidance</strong> — directions that update as the user moves.</li><li><strong>Dynamic markers</strong> — nearby stores and points of interest appear on the map as it moves.</li><li><strong>Interactive maps</strong> — pan, zoom and tap straight into the details of each stop.</li></ul>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Pirata is built around the map. It tracks the user&#x27;s position
+            in real time, plans the optimal route across a day of scheduled
+            stops, and guides them from one to the next.
+          </p>
+          <p>
+            Dynamic markers surface nearby stores and points of interest, and
+            each visit opens into a step-by-step task flow.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Real-time location tracking</strong> — the user&#x27;s
+              position stays accurate while walking or driving.
+            </li>
+            <li>
+              <strong>Optimal scheduled routes</strong> — a day of visits
+              ordered into the most efficient path, with time and distance.
+            </li>
+            <li>
+              <strong>Live route guidance</strong> — directions that update as
+              the user moves.
+            </li>
+            <li>
+              <strong>Dynamic markers</strong> — nearby stores and points of
+              interest appear on the map as it moves.
+            </li>
+            <li>
+              <strong>Interactive maps</strong> — pan, zoom and tap straight
+              into the details of each stop.
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Android &amp; iOS</dd>
+            </div>
+            <div>
+              <dt>Maps</dt>
+              <dd>Google Maps</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Built with</h3>
+          <ul class="chips">
+            <li class="chip">Flutter</li>
+            <li class="chip">Google Maps</li>
+            <li class="chip">Live tracking</li>
+            <li class="chip">REST APIs</li>
+            <li class="chip">Git</li>
+          </ul>
+          <div class="cs__links">
+            <a
+              class="btn btn--sm"
+              href="https://github.com/aiman-khan/pirata"
+              target="_blank"
+              rel="noopener"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-github" /></svg
+              >View code</a
+            >
+          </div>
+        </aside>
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app</dd></div><div><dt>Platform</dt><dd>Android &amp; iOS</dd></div><div><dt>Maps</dt><dd>Google Maps</dd></div></dl>
-        <h3 style="margin-top:32px">Built with</h3>
-        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Google Maps</li><li class="chip">Live tracking</li><li class="chip">REST APIs</li><li class="chip">Git</li></ul>
-        <div class="cs__links"><a class="btn btn--sm" href="https://github.com/aiman-khan/pirata" target="_blank" rel="noopener"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg>View code</a></div>
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-breather" aria-labelledby="cs-breather-t" style="--hue:222">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Wellness · Mobile app</b></p>
-      <h2 id="cs-breather-t">Breather <span class="serif">— Mindful breathing &amp; well-being</span></h2>
-      <p>A mindfulness app with customisable breathing patterns, a session scheduler, reminders and a global leaderboard.</p>
-    </header>
-    <div class="stage"><img src="assets/img/breather-720.webp" srcset="assets/img/breather-720.webp 720w, assets/img/breather-1440.webp 1440w" sizes="(max-width: 940px) 94vw, 880px" width="1438" height="790" alt="Breather app screens" loading="lazy" decoding="async"></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Breather guides users through breathing exercises that help with focus, anxiety, stress and mood. A calm interface keeps the attention on the breath, not the app.</p><p>Users set daily goals, schedule sessions, get reminded at the right time, and track their progress against others around the world.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Customisable breathing patterns</strong> — choose a preset or build your own.</li><li><strong>Session scheduler</strong> — plan sessions on a calendar and build a habit.</li><li><strong>Reminders</strong> — local and push notifications keep the practice consistent.</li><li><strong>Global leaderboard</strong> — progress tracking that adds a little friendly motivation.</li><li><strong>Google login</strong> — one-tap sign-in with progress synced through Firebase.</li></ul>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-breather"
+      aria-labelledby="cs-breather-t"
+      style="--hue: 222"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Wellness · Mobile app</b></p>
+        <h2 id="cs-breather-t">
+          Breather
+          <span class="serif">— Mindful breathing &amp; well-being</span>
+        </h2>
+        <p>
+          A mindfulness app with customisable breathing patterns, a session
+          scheduler, reminders and a global leaderboard.
+        </p>
+      </header>
+      <div class="stage">
+        <img
+          src="assets/img/breather-720.webp"
+          srcset="
+            assets/img/breather-720.webp   720w,
+            assets/img/breather-1440.webp 1440w
+          "
+          sizes="(max-width: 940px) 94vw, 880px"
+          width="1438"
+          height="790"
+          alt="Breather app screens"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app</dd></div><div><dt>Platform</dt><dd>Android &amp; iOS</dd></div><div><dt>State management</dt><dd>Provider</dd></div></dl>
-        <h3 style="margin-top:32px">Built with</h3>
-        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Firebase</li><li class="chip">Google Sign-In</li><li class="chip">Provider</li><li class="chip">Git</li></ul>
-        
-      </aside>
-    </div>
-  </dialog>
-  <dialog class="cs" id="cs-rigel" aria-labelledby="cs-rigel-t" style="--hue:286">
-    <button class="iconbtn cs__close" type="button" data-close aria-label="Close case study"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button>
-    <header class="cs__head">
-      <p class="card__meta"><b>Blockchain · Final-year project</b></p>
-      <h2 id="cs-rigel-t">Rigel <span class="serif">— Blockchain freelancing platform</span></h2>
-      <p>An Upwork-style marketplace where project terms and payments are enforced by Ethereum smart contracts — with built-in conflict resolution.</p>
-    </header>
-    <div class="stage"><img src="assets/img/rigel-720.webp" srcset="assets/img/rigel-720.webp 720w, assets/img/rigel-1440.webp 1440w" sizes="(max-width: 940px) 94vw, 880px" width="1440" height="1351" alt="Rigel app screens" loading="lazy" decoding="async"></div>
-    <div class="cs__grid">
-      <div>
-        <h3>Overview</h3>
-        <p>Rigel was my final-year project: a freelancing platform that replaces trust in a middleman with smart contracts. Project terms, milestones and payments are encoded on-chain and enforced automatically.</p><p>Freelancers and clients each get their own dashboard for postings, proposals, orders and progress, and a dedicated flow resolves disputes transparently.</p>
-        <h3>Highlights</h3>
-        <ul class="ticks"><li><strong>Smart-contract agreements</strong> — deliverables and payment schedules are self-executing, removing payment disputes.</li><li><strong>Tamper-proof records</strong> — project descriptions and milestones are recorded immutably.</li><li><strong>Conflict resolution</strong> — a structured, transparent process when the two sides disagree.</li><li><strong>Two-sided dashboards</strong> — separate client and freelancer experiences in one app.</li></ul>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Breather guides users through breathing exercises that help with
+            focus, anxiety, stress and mood. A calm interface keeps the
+            attention on the breath, not the app.
+          </p>
+          <p>
+            Users set daily goals, schedule sessions, get reminded at the right
+            time, and track their progress against others around the world.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Customisable breathing patterns</strong> — choose a preset
+              or build your own.
+            </li>
+            <li>
+              <strong>Session scheduler</strong> — plan sessions on a calendar
+              and build a habit.
+            </li>
+            <li>
+              <strong>Reminders</strong> — local and push notifications keep the
+              practice consistent.
+            </li>
+            <li>
+              <strong>Global leaderboard</strong> — progress tracking that adds
+              a little friendly motivation.
+            </li>
+            <li>
+              <strong>Google login</strong> — one-tap sign-in with progress
+              synced through Firebase.
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Android &amp; iOS</dd>
+            </div>
+            <div>
+              <dt>State management</dt>
+              <dd>Provider</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Built with</h3>
+          <ul class="chips">
+            <li class="chip">Flutter</li>
+            <li class="chip">Firebase</li>
+            <li class="chip">Google Sign-In</li>
+            <li class="chip">Provider</li>
+            <li class="chip">Git</li>
+          </ul>
+        </aside>
       </div>
-      <aside>
-        <h3>At a glance</h3>
-        <dl class="facts"><div><dt>Type</dt><dd>Mobile app + smart contracts</dd></div><div><dt>Chain</dt><dd>Ethereum</dd></div><div><dt>Context</dt><dd>Final-year project</dd></div></dl>
-        <h3 style="margin-top:32px">Built with</h3>
-        <ul class="chips"><li class="chip">Flutter</li><li class="chip">Solidity</li><li class="chip">Ethereum</li><li class="chip">Smart contracts</li><li class="chip">Firebase</li><li class="chip">Git</li></ul>
-        <div class="cs__links"><a class="btn btn--sm" href="https://github.com/aiman-khan/blockchain-based-freelancing-platform" target="_blank" rel="noopener"><svg class="icon icon--fill " aria-hidden="true"><use href="#i-github"/></svg>View code</a></div>
-      </aside>
-    </div>
-  </dialog>
-</body>
+    </dialog>
+    <dialog
+      class="cs"
+      id="cs-rigel"
+      aria-labelledby="cs-rigel-t"
+      style="--hue: 286"
+    >
+      <button
+        class="iconbtn cs__close"
+        type="button"
+        data-close
+        aria-label="Close case study"
+      >
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <header class="cs__head">
+        <p class="card__meta"><b>Blockchain · Final-year project</b></p>
+        <h2 id="cs-rigel-t">
+          Rigel <span class="serif">— Blockchain freelancing platform</span>
+        </h2>
+        <p>
+          An Upwork-style marketplace where project terms and payments are
+          enforced by Ethereum smart contracts — with built-in conflict
+          resolution.
+        </p>
+      </header>
+      <div class="stage">
+        <img
+          src="assets/img/rigel-720.webp"
+          srcset="
+            assets/img/rigel-720.webp   720w,
+            assets/img/rigel-1440.webp 1440w
+          "
+          sizes="(max-width: 940px) 94vw, 880px"
+          width="1440"
+          height="1351"
+          alt="Rigel app screens"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="cs__grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Rigel was my final-year project: a freelancing platform that
+            replaces trust in a middleman with smart contracts. Project terms,
+            milestones and payments are encoded on-chain and enforced
+            automatically.
+          </p>
+          <p>
+            Freelancers and clients each get their own dashboard for postings,
+            proposals, orders and progress, and a dedicated flow resolves
+            disputes transparently.
+          </p>
+          <h3>Highlights</h3>
+          <ul class="ticks">
+            <li>
+              <strong>Smart-contract agreements</strong> — deliverables and
+              payment schedules are self-executing, removing payment disputes.
+            </li>
+            <li>
+              <strong>Tamper-proof records</strong> — project descriptions and
+              milestones are recorded immutably.
+            </li>
+            <li>
+              <strong>Conflict resolution</strong> — a structured, transparent
+              process when the two sides disagree.
+            </li>
+            <li>
+              <strong>Two-sided dashboards</strong> — separate client and
+              freelancer experiences in one app.
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Type</dt>
+              <dd>Mobile app + smart contracts</dd>
+            </div>
+            <div>
+              <dt>Chain</dt>
+              <dd>Ethereum</dd>
+            </div>
+            <div>
+              <dt>Context</dt>
+              <dd>Final-year project</dd>
+            </div>
+          </dl>
+          <h3 style="margin-top: 32px">Built with</h3>
+          <ul class="chips">
+            <li class="chip">Flutter</li>
+            <li class="chip">Solidity</li>
+            <li class="chip">Ethereum</li>
+            <li class="chip">Smart contracts</li>
+            <li class="chip">Firebase</li>
+            <li class="chip">Git</li>
+          </ul>
+          <div class="cs__links">
+            <a
+              class="btn btn--sm"
+              href="https://github.com/aiman-khan/blockchain-based-freelancing-platform"
+              target="_blank"
+              rel="noopener"
+              ><svg class="icon icon--fill" aria-hidden="true">
+                <use href="#i-github" /></svg
+              >View code</a
+            >
+          </div>
+        </aside>
+      </div>
+    </dialog>
+  </body>
 </html>
