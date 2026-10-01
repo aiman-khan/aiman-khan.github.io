@@ -1,29 +1,39 @@
-# Aiman Sartaj portfolio (aiman-khan.github.io) — setup notes
+# aiman-khan.github.io
 
-Rebuilt 2026-10-02. Replaces the old "dopefolio" template site.
+Personal portfolio of Aiman Sartaj — https://aiman-khan.github.io/
 
-## What it is
+Plain HTML, CSS and JavaScript. No framework, no build step: edit a file, push to `main`, and GitHub Pages deploys it.
 
-- Static site for GitHub Pages user repo `aiman-khan/aiman-khan.github.io` → https://aiman-khan.github.io/
-- Plain HTML/CSS/JS, no framework, no build step. Deploy = push to `main` (workflow `.github/workflows/static.yml`, actions v4/v5/v3/v4).
-- Files: `index.html` (everything, one `<dialog class="cs">` case study per project), `css/style.css` (tokens at top), `js/main.js`, `assets/img/*.webp`, `project-1..5.html` (redirects from old case-study URLs to `/#slug`), `404.html`, `favicon.svg`, `apple-touch-icon.png`, `assets/og.png`, `robots.txt`, `sitemap.xml`.
+```
+index.html          the whole site (sections + one <dialog> case study per project)
+css/style.css       all styles; colours and fonts are tokens at the top
+js/main.js          theme toggle, menu, scroll reveals, case-study dialogs
+assets/img/         project images (WebP, 720px and 1440px wide)
+project-N.html      redirects from the old case-study URLs
+404.html            not-found page
+```
 
-## Decisions (from Aiman)
+## Preview locally
 
-- Dark theme by default with a light toggle (follows system on first visit, remembered in localStorage).
-- Headline role: Senior Software Engineer; "4+ years" of experience.
-- Contact: email button + copy (aiman.dev.s@gmail.com) and LinkedIn/GitHub/Medium. No form.
+```
+python3 -m http.server 8000
+```
 
-## Design
+then open http://localhost:8000.
 
-- Fonts: Geist (UI), Instrument Serif italic (accent words), Geist Mono (labels/code) via Google Fonts, loaded non-blocking.
-- Accent: iris `#9a8bff` → mint `#46e0c1` gradient. Each project card has its own `--hue` for the image stage.
-- Project order: Quickers Venture, Skill Nova, Lucentum, TMIDirect, B2B Connect, Pirata, Breather, Rigel.
+## Add a real screenshot to a project
 
-## Open items
+Quickers Venture, Skill Nova and Lucentum currently use illustrations.
 
-- Quickers Venture, Skill Nova, Lucentum use SVG illustrations; real screenshots to come (swap the `<svg>` in the card and dialog `.stage` for an `<img>`; see README in the repo).
-- Tech stack for those three is not stated (shown as "Focus areas"); Aiman's exact role on each not stated.
-- No work-history/experience timeline or résumé PDF yet — needs employers, titles, dates from Aiman.
-- "Open to new projects & roles" badge in the hero is an assumption; remove if not true.
-- Fonts could be self-hosted (woff2) for one less third-party connection.
+1. Export the screenshot as WebP, about 1440px wide, into `assets/img/`.
+2. In `index.html`, find the project's two `<div class="stage">` blocks (one in its card, one in its `<dialog>`).
+3. Replace the `<svg>…</svg>` inside each with:
+
+```html
+<img src="assets/img/quickers-1440.webp" width="1440" height="990" alt="Quickers Venture dashboard" loading="lazy" decoding="async">
+```
+
+## Add a project
+
+Copy an `<article class="card">` and its matching `<dialog class="cs">`, give both the same slug
+(`id="my-project"` and `id="cs-my-project"`, `data-open="my-project"`), and set `--hue` to the project's colour (0–360).
